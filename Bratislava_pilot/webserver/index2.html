@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>|provider| - |msg_index2_01_hotspot_is| |_CHECK_ONLINE_|</title>
+  |meta_data|
+  <link rel="stylesheet" href="|cssfile|">
+  |char_set|
+  |jquery|
+</head>
+<body onload="system_check()">
+  <div class="x-content">
+    |sms_1st||sendSMS_TS||sms_2nd|
+    <div class="row">
+      <div class="xwd-3 xwt-3 mobile-off"></div>
+      <div class="xwd-6 xwt-6">
+        <div id="show_logo" style="margin:-15px; padding: 0px 0px 0px 0px;" >
+          |logo|
+        </div>
+      </div>
+      <div class="xwd-3 xwt-3" style="margin:0 auto;">
+        <div style="margin:0 auto;width:100px;">
+          <select name="languages" id="languages" class="|input_class|" style="|lang_styles|" onchange="change_language();">
+            |language|
+          </select>
+        </div>
+      </div>
+      <div id="modal_connection_alert" class="modal">
+        <!-- Modal content -->
+        <div id="modal_connection_alert_content" class="modal-content">
+          <p align="center">|msg_index2_02_your_hotspot|<span style="color:red;"><b>|msg_index2_03_has_no_internet|</b></span></p>
+          <p align="center">|msg_index2_04_please_wait|</p>
+        </div>
+      </div>
+      <div id="modal_daypass_alert" class="modal">
+        <!-- Modal content -->
+        <div id="modal_daypass_alert_content" class="modal-content">
+          <p align="center">|msg_index2_05_you_still_have_daypasses|<span style="color:red;"><b>|msg_index2_06_daypasses_will_be_lost|</b></span></p>
+          <p align="center">|msg_index2_07_are_you_sure|</p>
+          <div class="row">
+            <div class="xwd-3 xwt-3 mobile-off"></div>
+            <div class="xwd-3 xwt-3">
+              <p  id="no" class="button" style="text-align: center; margin:0 auto; display:block" onclick="close_popup()"><b>|msg_index2_15_no|</b></p>
+            </div>
+            <div class="xwd-3 xwt-3">
+              <a id="what_type_of_cp" href="" class="button" style="text-align: center; margin:0 auto; display:block"><b>|msg_index2_14_yes|</b></a>
+            </div>
+            <div class="xwd-3 xwt-3 mobile-off tablet-off"></div>
+          </div>
+        </div>
+      </div>
+      <div id="modal_free_info" class="modal">
+        <!-- Modal content -->
+        <div id="modal_free_info_content" class="modal-content">
+          <p align="center">|msg_index2_21_free_info_text|</p>
+          <div class="row">
+            <div class="xwd-3 xwt-3 mobile-off"></div>
+            <div class="xwd-3 xwt-3">
+              <p   class="button" style="text-align: center; margin:0 auto; display:block" onclick="close_free_info()"><b>|msg_index2_15_no|</b></p>
+            </div>
+            <div class="xwd-3 xwt-3">
+              <a id="yes_free" href="sys_free_clear.html" class="button" style="text-align: center; margin:0 auto; display:block"><b>|msg_index2_14_yes|</b></a>
+            </div>
+            <div class="xwd-3 xwt-3 mobile-off tablet-off"></div>
+          </div>
+        </div>
+      </div>
+      <div id="modal_paid_info" class="modal">
+        <!-- Modal content -->
+        <div id="modal_paid_info_content" class="modal-content">
+            <div class="row">
+          <p align="center">|msg_index2_20_paid_info_text|</p>
+        </div>
+          <div class="row">
+          <input type="hidden" id="daypass_price" value="1">
+          <div class="xwd-12 xwt-12">
+              <p align="center" class="darktext" style="margin:0; padding: 0px; font-size: 20px"><b>|msg_index2_22_price_one_daypass|&nbsp<span id="price"></span>|currency_char|</b>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="xwd-3 xwt-3 mobile-off"></div>
+            <div class="xwd-3 xwt-3">
+              <p  class="button" style="text-align: center; margin:0 auto; display:block" onclick="close_paid_info()"><b>|msg_index2_15_no|</b></p>
+            </div>
+            <div class="xwd-3 xwt-3">
+              <a id="yes_paid" href="sys_paid_clear.html" class="button" style="text-align: center; margin:0 auto; display:block"><b>|msg_index2_14_yes|</b></a>
+            </div>
+            <div class="xwd-3 xwt-3 mobile-off tablet-off"></div>
+          </div>
+        </div>
+      </div>
+      <div id="modal_select" class="modal">
+        <!-- Modal content -->
+        <div id="modal_select_content" class="modal-content" style="width:50%;">
+          <span class="close">&times;</span>
+          <div class="row">
+            <div class="xwd-1 xwt-1 mobile-off"></div>
+            <div class="xwd-5 xwt-5">
+              <a  id="paid_access"  class="button" style="text-align: center; margin:0 auto; padding-right:0; padding-left:0; display:block" onclick="openPaidInfo()" ><b>|msg_index2_17_paid_access|</b>&nbsp
+                <span style="font-size:14px;">(<span id="show_price_modal"></span>|currency_char|)</span>
+                <p  align="center" style="margin:0px -10px 0px 0px; padding: 5px 0px 0px 0px; font-size: 9px;display:|data_collect_visibility|;">|msg_index2_19_data_not_collected|
+                </p>
+              </a>
+            </div>
+            <div class="xwd-5 xwt-5">
+              <a id="free_access"  class="button" style="text-align: center; margin:0 auto; display:block" onclick="openFreeInfo()"><b>|msg_index2_16_free_unlimited_wifi|</b>
+                <p  align="center" style="margin:0px -10px 0px -10px; padding: 5px 0px 0px 0px; font-size: 9px;display:|data_collect_visibility|;">|msg_index2_18_data_collected|
+                </p>
+              </a>
+            </div>
+            <div class="xwd-1 xwt-1 mobile-off tablet-off"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <br><br> -->
+    <div style="display:flex;flex-direction: column;">
+      <div class="row">
+        <div class="xwd-3 xwt-3 mobile-off"></div>
+        <div class="xwd-6 xwt-6">
+          <b><p id="welcome_message" class="darktext" align="center" style="margin:0; padding: 0px; font-size: 20px">
+          </p></b>
+          <p class="darktext" align="center" style="margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px; font-size: 20px">|hotspot_id|<br>|hotspot_ssid|
+          </p>
+        </div>
+        <div class="xwd-3 xwt-3 mobile-off"></div>
+      </div>
+      <div id="act_number_message" class="row">
+        <div class="xwd-3 xwt-3 mobile-off"></div>
+        <div class="xwd-6 xwt-6">
+          <p align="center" class="darktext" style="margin:0; padding: 0px; font-size: 20px"><b>|msg_index2_08_enter_act_number|</b>
+          </p>
+        </div>
+        <div class="xwd-3 xwt-3 mobile-off"></div>
+      </div>
+      <div id="formrow" class="row">
+        <div class="xwd-3 xwt-3 mobile-off"></div>
+        <div class="xwd-6 xwt-6">
+          <input type="text" name="" id="customer_number_input" placeholder="|msg_general_01_enter_number|" maxlength="7" minlength="4"
+          class="|input_class|" style="margin:0 auto; display:block " autocomplete="off" required  onfocus="noAlert()">
+          <form name="customer_number" action="cmd" id="customer_number" style="margin:0 auto;"  method="post">
+            <input type="hidden" name="_verify_customer_number" id="copy_value" value="">
+            <input type="hidden" name="_verify_success_url" id="verify_success" value="sys_dp_act_check.html" >
+            <input type="hidden" name="_verify_fail_url" id="verify_failed" value="index2.html">
+          </form>
+        </div>
+        <div  class="xwd-3 xwt-3 mobile-off tablet-off"></div>
+      </div>
+      <div class="row">
+        <div id="id_paid_access" class="xwd-12 xwt-12" style="display:none; margin 0 auto; padding:10px;">
+          <a class="button" style="text-align: center; margin:0 auto; display:block;text-decoration: none; "><b>|msg_index2_17_paid_access|</b>&nbsp
+            <span style="font-size:14px;">(<span id="show_price_main"></span>|currency_char|)</span>
+            <p  align="center" style="margin:0px -10px 0px -10px; padding: 5px 0px 0px 0px; font-size: 9px;display:|data_collect_visibility|;">|msg_index2_19_data_not_collected|
+            </p></a>
+          </div>
+          <div id="id_free_access" class="xwd-12 xwt-12"style="display:none;margin 0 auto; padding:10px;">
+            <a  class="button" style="text-align: center; margin:0 auto; display:block;text-decoration: none; "><b>|msg_index2_16_free_unlimited_wifi|</b>
+              <p  align="center" style="margin:0px -10px 0px -10px; padding: 5px 0px 0px 0px; font-size: 9px;display:|data_collect_visibility|;">|msg_index2_18_data_collected|
+              </p></a>
+            </div>
+          </div>
+          <div id="new_user" class="row">
+            <div class="xwd-3 xwt-3 mobile-off"></div>
+            <div  class="xwd-6 xwt-6">
+              <p  id="link_new_user" class="no-url-link darktext" style="cursor: pointer;
+              text-align:center; margin:0 auto; margin-top: -20px;font-size: 14px;" onclick="daypass_pool();"><b>|msg_index2_13_new_user|</b></p>
+            </div>
+            <div class="xwd-3 xwt-3 mobile-off tablet-off"></div>
+          </div>
+          <br>
+          <div id="id_terms" class="row" style="padding-left:30px;display:|terms_condition_checkbox|;">
+            <div class="xwd-4 xwt-4 mobile-off"></div>
+            <div  class="xwd-4 xwt-4" style="margin:0 auto;padding:0;">
+              <div class="" style="float:left; width: 20px;">
+                <input class="" id="check1" name=""  value="" title="" placeholder="" |checkbox_terms_required| type="checkbox">
+              </div>
+              <div class="" style="float:left; width: 90%; margin-top:4px;">
+                <p  class="darktext" style="margin:0px 0px 0px 0px; padding-left: 10px;font-size:10px"><b>|msg_general_17_terms_accept|</b></p>
+              </div>
+            </div>
+            <div class="xwd-4 xwt-4 mobile-off"></div>
+          </div>
+          <div id="id_location" class="row" style="padding-left:30px;display:|permission_checkbox|;">
+            <div class="xwd-4 xwt-4 mobile-off"></div>
+            <div  class="xwd-4 xwt-4 " style="margin:0 auto;padding:0;">
+              <div class="" style="float:left; width: 20px;">
+                <input class="" id="check2" name=""  value="" title="" placeholder="" |checkbox_locations_required| type="checkbox">
+              </div>
+              <div class="" style="float:left; width: 90%;">
+                <p class="darktext" style="margin:4px 0px 0px 0px; padding-left: 10px;font-size:10px"><b>|msg_f_new_16_grand_permission|</b>
+                </p>
+              </div>
+            </div>
+            <div class="xwd-4 xwt-4 mobile-off"></div>
+          </div>
+          <div id="order_first">
+            <p align="center" style="margin:0 auto; padding: 0px 10px 0px 0px; font-size: 8px;display:|bannerclickinfo_visibility|">|msg_general_18_banner_click|</p>
+            |advert_slideshow_start||msg_general_02_advert_popup_text||advert_slideshow_end|
+          </div>
+        </div>
+        <div class="row">
+          <div id="send_button" class="xwd-12 xwt-12">
+            <p  align="center"
+            class="button" style="margin:0 auto; display:block" onclick="alphanumeric(customer_number_input)">|msg_general_03_send|</p>
+          </div>
+        </div>
+        <br>
+      </div>
+      <br><br><br><br><br><br><br>
+      |footer|
+      <script>
+      var price;
+      var pricing_data = [];
+      var xml_length = 0;
+      $(document).ready(function() {
+        $("#languages").msDropdown();
+      });
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+        $("#modal_select_content").fadeOut(500,function(){
+          $("#modal_select").slideUp(500);});
+          $("#modal_select_content").show();
+        }
+        $("#languages").val("index2.html?__lang=|language_select_box|");
+        function system_check() {
+          var act_code = "|rb_hash1||_UI_SESSION_phone_field||rb_hash2|";
+          var online_check = "";
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              online_check = this.responseText;
+              var is_offline = online_check.includes("OFFLINE")
+              //      alert(online_check.length+"/"+online_check);
+              if (is_offline) {
+                $("#modal_connection_alert_content").hide();
+                $("#modal_connection_alert").slideDown(500,function(){
+                  $("#modal_connection_alert_content").fadeIn(500);
+                });
+              }
+              else {
+                $("#modal_connection_alert_content").fadeOut(500,function(){
+                  $("#modal_connection_alert").slideUp(500);});
+                  $("#modal_connection_alert_content").show();
+                }
+              }
+            };
+            xhttp.open("GET", "sys_check_online.html", true);
+            xhttp.send();
+            if (act_code.length <31) {
+              $("#new_user,#formrow,#send_button,#act_number_message,#id_location").hide();
+              document.getElementById("check1").required = false;
+              document.getElementById("check2").required = false;
+              var free_version = "|free_version|";
+              var paid_version = "|paid_version|";
+              if (free_version == "yes" && paid_version == "yes") {
+                $("#id_paid_access,#id_free_access").show();
+              }
+              if (free_version == "yes" && paid_version == "no") {
+                $("#id_free_access").show();
+                $("#id_paid_access").hide();
+              }
+              if (paid_version == "yes" && free_version == "no") {
+                $("#id_free_access").hide();
+                $("#id_paid_access").show();
+              }
+            }
+            else {  blink_new_user();
+            }
+          }
+          $("#id_free_access").click(function(){
+            $("#modal_free_info_content").hide();
+            $("#modal_free_info").slideDown(500,function(){
+              $("#modal_free_info_content").fadeIn(500);
+            });
+          });
+          $("#id_paid_access").click(function(){
+              $("#modal_paid_info_content").hide();
+            $("#modal_paid_info").slideDown(500,function(){
+              $("#modal_paid_info_content").fadeIn(500);
+            });
+          });
+          function clear_wallet() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "cmd", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("_wallet_clear_=yes");
+          }
+          clear_wallet();
+          setInterval(system_check, 15000);
+          function greeting_message() {
+            var firstname = "|_UI_SESSION_first_name|";
+            var d = new Date();
+            var n = d.getHours();
+            var x = "";
+            if (n<12) {
+              x = "|msg_index2_09_good_morning|";
+            }
+            if (n>11 && n<18) {
+              x = "|msg_index2_10_good_afternoon|";
+            }
+            if (n>17) {
+              x = "|msg_index2_11_good_evening|";
+            }
+            if (firstname == "") {
+              $("#welcome_message").text("|msg_index2_12_welcome|");
+            }
+            else {
+              $("#welcome_message").text(x+"|_UI_SESSION_first_name|");
+            }
+          }
+          greeting_message();
+          function blink_new_user() {
+            $("#new_user").fadeToggle(4000,blink_new_user);
+          }
+          function daypass_pool() {
+            var daypass = Number(|_SESSION_DP_Pool|);
+            if (daypass > 0) {
+              $("#modal_daypass_alert_content").hide();
+              $("#modal_daypass_alert").slideDown(500,function(){
+                $("#modal_daypass_alert_content").fadeIn(500);
+              });
+            }
+            else {
+              var free_version = "|free_version|";
+              var paid_version = "|paid_version|";
+              if (free_version == "yes" && paid_version == "yes") {
+                $("#modal_select_content").hide();
+                $("#modal_select").slideDown(500,function(){
+                  $("#modal_select_content").fadeIn(500);
+                });              }
+                if (free_version == "yes" && paid_version == "no") {
+                  window.open("sys_free_clear.html","_self");
+                }
+                if (paid_version == "yes" && free_version == "no") {
+                  window.open("sys_paid_clear.html","_self");
+                }
+              }
+            }
+            function change_language() {
+              window.open($("#languages").val(),"_self");
+            }
+            function noAlert() {
+              document.getElementById("customer_number_input").className = "|input_class|";
+              document.getElementById("customer_number_input").placeholder = "|msg_general_01_enter_number|";
+            }
+            function alphanumeric(inputtxt)
+            {
+              var letters = /^[0-9a-zA-Z]+$/;
+              var uppercase;
+              var  checkbox_terms_required = false;
+              var checkbox_locations_required = false;
+              if (document.getElementById("check1").required == true) {
+                if (document.getElementById("check1").checked ) {checkbox_terms_required = true; }
+              }
+              if (document.getElementById("check1").required == false) {
+                checkbox_terms_required = true;
+              }
+              if (document.getElementById("check2").required == true) {
+                if (document.getElementById("check2").checked) {checkbox_locations_required = true; }
+              }
+              if (document.getElementById("check2").required == false) {
+                checkbox_locations_required = true;
+              }
+              if(inputtxt.value.match(letters) &&
+              checkbox_terms_required &&
+              checkbox_locations_required)
+              {
+                uppercase = document.getElementById("customer_number_input").value.toUpperCase();
+                document.getElementById("customer_number_input").value = uppercase;
+                document.getElementById("copy_value").value = document.getElementById("customer_number_input").value;
+                document.getElementById("customer_number").submit();
+              }
+              else
+              {   if(    checkbox_terms_required &&
+                checkbox_locations_required) {
+                  document.getElementById("customer_number_input").value = "";
+                  document.getElementById("customer_number_input").placeholder = "|msg_general_04_only_numbers_letters|";
+                  document.getElementById("customer_number_input").className = "alert";}
+                }
+              }
+              function fillModal() {
+                var free_version = "|free_version|";
+                var paid_version = "|paid_version|";
+                if (free_version == "yes" && paid_version == "yes") {
+                  document.getElementById("what_type_of_cp").removeAttribute("href");
+                  document.getElementById("what_type_of_cp").onclick= function() {openSelection()};
+                }
+                if (free_version == "yes" && paid_version == "no") {
+                  document.getElementById("what_type_of_cp").href="sys_free_clear.html"
+                }
+                if (paid_version == "yes" && free_version == "no") {
+                  document.getElementById("what_type_of_cp").href="sys_paid_clear.html"
+                }
+              }
+              fillModal();
+              function openSelection(){
+                $("#modal_daypass_alert_content").fadeOut(250,function() {
+                  $("#modal_daypass_alert").hide();
+                  $("#modal_daypass_alert_content").show();
+                  $("#modal_select_content").hide();
+                  $("#modal_select").show();
+                  $("#modal_select_content").fadeIn(250);
+                });
+              }
+              function close_popup() {
+                $("#modal_daypass_alert_content").fadeOut(500,function() {
+                  $("#modal_daypass_alert").slideUp(500);});
+                  $("#modal_daypass_alert_content").show();
+                }
+                function openFreeInfo(){
+                  $("#modal_select_content").fadeOut(250,function() {
+                    $("#modal_select").hide();
+                    $("#modal_select_content").show();
+                    $("#modal_free_info_content").hide();
+                    $("#modal_free_info").show();
+                    $("#modal_free_info_content").fadeIn(250);
+                  });
+                }
+                 function openPaidInfo(){
+                   $("#modal_select_content").fadeOut(250,function() {
+                     $("#modal_select").hide();
+                     $("#modal_select_content").show();
+                     $("#modal_paid_info_content").hide();
+                     $("#modal_paid_info").show();
+                     $("#modal_paid_info_content").fadeIn(250);
+                            });
+                          }
+                function close_free_info() {
+                  $("#modal_free_info_content").fadeOut(500,function() {
+                    $("#modal_free_info").slideUp(500);});
+                    $("#modal_free_info_content").show();
+                  }
+                  function close_paid_info() {
+                    $("#modal_paid_info_content").fadeOut(500,function() {
+                      $("#modal_paid_info").slideUp(500);});
+                      $("#modal_paid_info_content").show();
+                    }
+                    loadDoc2();
+                    function loadDoc2() {
+
+                      var xhttp = new XMLHttpRequest();
+                      xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                          myFunction2(this);
+                        }
+                      };
+                      xhttp.open("GET", "|pricing_xml|", true);
+                      xhttp.send();
+                    }
+                    function myFunction2(xml) {
+                      var i;
+                      var xmlDoc = xml.responseXML;
+                    	var x = xmlDoc.getElementsByTagName("daypass");
+                    	xml_length = x.length;
+
+                    	for (i = 0; i <x.length; i++) {
+                    		  pricing_data[i] = new Array();
+                       pricing_data[i][0] = x[i].getElementsByTagName("wanted")[0].childNodes[0].nodeValue;
+                    	 pricing_data[i][1] = x[i].getElementsByTagName("buying")[0].childNodes[0].nodeValue;
+                       pricing_data[i][2] = x[i].getElementsByTagName("price")[0].childNodes[0].nodeValue;
+                      }
+
+                    }
+                    function calculatePrice() {
+                    	var i;
+                    	for (i = 0; i < xml_length; i++)
+                    	{
+                    	if ( Number(document.getElementById("daypass_price").value) == pricing_data[i][0]) {
+                    		$("#price,#show_price_main,#show_price_modal").html(pricing_data[i][2]);
+                    	//	document.getElementById("customer_number_input").value = pricing_data[i][1];
+                    	}
+                    }
+                    }
+                    setTimeout(function(){calculatePrice();},1000);
+
+                    </script>
+
+                    |move_slides|
+                  </body>
+                  </html>

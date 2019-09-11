@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|provider| - |msg_index2_01_hotspot_is| |_CHECK_ONLINE_|</title>
+	|meta_data|
+	<link rel="stylesheet" href="|cssfile|">
+	|char_set|
+</head>
+<body>
+	<div class="x-content">
+		<div class="row">
+			<div class="xwd-3 xwt-3 ">
+				<p align="center" style="margin:-10px 0px -13px 0px; padding: 0px 0px 0px 0px; font-size: 10px">
+					<a href="index2.html" class="no-url-link light" style="margin:0 auto; display:block"><- |msg_general_07_go_back|
+					</a>
+				</p>
+			</div>
+			<div class="xwd-6 xwt-6">
+				<div id="show_logo" style="margin:-15px; padding: 0px 0px 0px 0px;" >
+					|logo|
+				</div>
+			</div>
+			<div class="xwd-3 xwt-3" style="margin:0px 0px 0px 0px; padding: 10px 0px 2px 0px;font-size: 10px;">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="xwd-3 xwt-3 mobile-off"></div>
+			<div class="xwd-6 xwt-6">
+			</div>
+			<div class="xwd-3 xwt-3 mobile-off"></div>
+		</div>
+		<form name="PaymentForm" action="" id="PaymentForm" onkeyup="calculatePrice();" style="margin:0 auto;" method="post">
+			<div style="display:flex;flex-direction: column;">
+				<div class="row">
+					<div class="xwd-12 xwt-12">
+						<p class="darktext" align="center" style="margin:0px 0px 0px 0px; padding: 15px 0px 10px 0px; font-size:20px">|msg_general_19_how_many_daypass_buy|
+						</p>
+						<input type="text" id="customer_number_input" placeholder="min 1 max 30" maxlength="2" minlength="1"
+						class="|input_class|" style="margin:0 auto; display:block " autocomplete="off" required  onclick="noAlert(customer_number_input)">
+					</div>
+					<div class="xwd-12 xwt-12">
+						<p align="center" class="darktext" style="margin:0; padding: 0px; font-size: 20px"><b>|msg_general_22_price_for_daypasses|<span id="price"></span>|currency_char|</b>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="xwd-12 xwt-12">
+						<p align="center" class="darktext" style="margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px; font-size: 14px">
+							<a   style="margin:0 auto;display:block"><b>|msg_p_payment_01_credit_card_number|</b>
+							</a>
+						</p>
+						<input type="text" name="cc_pan" id="id_credit_card_number" placeholder="1234 5678 2345 6789" maxlength="16" minlength="12"
+						class="|input_class|" style="margin:0 auto; display:block " autocomplete="off" required  onclick="noAlert(id_credit_card_number)">
+					</div>
+				</div>
+				<div class="row" style="width:250px; margin:0 auto; padding-top:0;">
+					<p class="darktext" align="left" style="float:left; margin:0; padding:0; font-size: 10px">
+						<a  style=" display:block"><b>|msg_p_payment_03_expire_date|</b>
+						</a>
+					</p>
+					<p class="darktext" align="right" style="margin:0; padding:0; font-size: 10px">
+						<a  style=" display:block"><b>|msg_p_payment_04_cvv|</b>
+						</a>
+					</p>
+				</div>
+				<div class="row" style="width:250px; margin:0 auto; padding-top:0;">
+					<div style="padding 0px; float: left; width:40px;">
+						<input type="text" name="cc_expirationMonth" id="id_month_number" placeholder="03" maxlength="2" minlength="2"
+						class="|input_class|" style="float: left;width:40px;margin:0 auto; padding-left:10px!important; padding-right:0;  display:block; " autocomplete="off" required  onclick="noAlert(id_month_number)">
+					</div>
+					<div style="padding 0px; float: left; width:15px;">
+						<p align="center" style="float: left;width:15px; margin:0px 0px 0px 0px; padding: 9px 0px 0px 0px; font-size: 20px">
+							<a   style="margin:0 auto; color: black; display:block"><b>/</b>
+							</a>
+						</p>
+					</div>
+					<div style="padding 0px; float: left; width:50px;">
+						<input type="text" name="cc_expirationYear" id="id_year_number" placeholder="2020" maxlength="4" minlength="4"
+						class="|input_class|" style="float: left;width:50px; margin:0 auto; display:block; padding-left:7px!important; padding-right:0; " autocomplete="off" required  onclick="noAlert(id_year_number)">
+					</div>
+					<div style="padding 0px; float: left; width:100px;">
+						<p></p>
+					</div>
+					<div style="padding 0px; float: left; width:40px;">
+
+						<input type="text" name="cc_cardverifycode" id="id_cvv_number" placeholder="123" maxlength="3" minlength="3"
+						class="|input_class|" style="float: left;width:40px; margin:0 auto; display:block; padding-left:6px!important; padding-right:0; " autocomplete="off" required  onclick="noAlert(id_cvv_number)">
+					</div>
+				</div>
+				<div style="padding:15;">
+					<p class="darktext" align="center" style="margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px; font-size: 14px">
+						<a   style="margin:0 auto; display:block"><b>|msg_p_payment_02_credit_card_holder|</b>
+						</a>
+					</p>
+					<input type="text" name="cc_cardholdername" id="id_holder_name" placeholder="JOHN SMITH" maxlength="25" minlength="0"
+					class="|input_class|" style="margin:0 auto; display:block;" autocomplete="off" required  onclick="noAlert(id_holder_name)">
+				</div>
+				<div id="order_first">
+					|advert_slideshow_start||msg_general_02_advert_popup_text||advert_slideshow_end|
+				</div>
+				<br>
+				<div class="xwd-12 xwt-12">
+					<button id="send_button" type="button" form="PaymentForm" value=""
+					class="button" style="margin:0 auto; display:block" onclick="check_form()">Send</button>
+				</div>
+				<input type="hidden" name="AMOUNT" id="customer_number">
+				<input type="hidden" value="|currency|" name="CCY" >
+				<input type="hidden" value="" id="payment_message" name="MSG" >
+				<input type="hidden" name="PRICE" id="price_payment" value="0" >
+			</div>
+		</form>
+		<br><br><br><br>
+	</div>
+	|footer|
+	<script>
+	var letters = /^[a-zA-Z ]+$/;
+	var numberinput = /^[0-9]+$/;
+	var lettersnumbers = /^[0-9a-zA-Z]+$/;
+
+	function noAlert(ident) {
+		document.getElementById(ident.id).focus();
+		document.getElementById(ident.id).className = "|input_class|";
+		//	document.getElementById("send_button").type = "submit";
+	}
+	function delay_even_more() {
+		document.getElementById("PaymentForm").action = "https://getflink.com/payment/processPayment.php";
+		document.getElementById("PaymentForm").submit();
+	}
+	function delay_send() {
+setTimeout(delay_even_more, 2500);
+
+	}
+
+
+	function open_payment() {
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("POST", "cmd", true);
+		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xhttp.send("_cmd_open_payment=yes");
+	}
+	function check_form()
+	{
+		if(document.getElementById("id_credit_card_number").value.match(numberinput) &&
+		document.getElementById("id_month_number").value.match(numberinput) &&
+		document.getElementById("id_year_number").value.match(numberinput) &&
+		document.getElementById("id_cvv_number").value.match(numberinput) &&
+		document.getElementById("id_holder_name").value.match(letters)
+	)
+	{
+		open_payment();
+		document.getElementById("payment_message").value = "Provider - |provider|/Hotspot  - |hotspot_serial|/Wanted:"+document.getElementById("customer_number_input").value+"/Bought:"+document.getElementById("customer_number").value;
+		document.getElementById("send_button").className = "buttonpressed";
+		document.getElementById("send_button").innerHTML = "|msg_general_21_sending|";
+		setTimeout(delay_send, 2501);
+
+	}
+	check_credit_card_number();
+	check_month_number();
+	check_year_number();
+	check_cvv_number();
+	check_holder_name();
+	alphanumeric();
+}
+function alphanumeric()
+{
+	var letters = /^[0-9]+$/;
+	var numberdaypass = document.getElementById("customer_number_input").value;
+	if(document.getElementById("customer_number_input").value.match(letters))
+	{
+		if (numberdaypass < 31 && numberdaypass >0) {
+			document.getElementById("send_button").type = "button";
+		}
+		else
+		{
+			document.getElementById("customer_number_input").value = "";
+			document.getElementById("customer_number_input").placeholder = "|msg_general_14_only_numbers_1_30|";
+			document.getElementById("customer_number_input").className = "alert";
+			document.getElementById("send_button").type = "button";
+		}
+	}
+	else
+	{
+		document.getElementById("customer_number_input").value = "";
+		document.getElementById("customer_number_input").placeholder = "|msg_general_14_only_numbers_1_30|";
+		document.getElementById("customer_number_input").className = "alert";
+		document.getElementById("send_button").type = "button";
+		return false;
+	}
+}
+function check_credit_card_number()
+{
+
+	if(document.getElementById("id_credit_card_number").value.match(numberinput))
+	{
+	} else
+	{
+		document.getElementById("id_credit_card_number").value = "";
+		document.getElementById("id_credit_card_number").placeholder = "msg_general_13_only_numbers";
+		document.getElementById("id_credit_card_number").className = "alert";
+		document.getElementById("send_button").type = "button";
+	}
+}
+function check_month_number() {
+	if(document.getElementById("id_month_number").value.match(numberinput))
+	{
+	}
+	else
+	{
+		document.getElementById("id_month_number").value = "";
+		document.getElementById("id_month_number").placeholder = "";
+		document.getElementById("id_month_number").className = "alert";
+		document.getElementById("send_button").type = "button";
+	}
+	if (Number(document.getElementById("id_month_number").value) < 1) {
+		document.getElementById("id_month_number").value = "";
+		document.getElementById("id_month_number").placeholder = "";
+		document.getElementById("id_month_number").className = "alert";
+		document.getElementById("send_button").type = "button";
+	}
+	if (Number(document.getElementById("id_month_number").value) > 12) {
+		document.getElementById("id_month_number").value = "";
+		document.getElementById("id_month_number").placeholder = "";
+		document.getElementById("id_month_number").className = "alert";
+		document.getElementById("send_button").type = "button";
+	}
+}
+function check_year_number() {
+	if(document.getElementById("id_year_number").value.match(numberinput))
+	{
+	}
+	else
+	{
+		document.getElementById("id_year_number").value = "";
+		document.getElementById("id_year_number").placeholder = "";
+		document.getElementById("id_year_number").className = "alert";
+		document.getElementById("send_button").type = "button";
+	}
+	var d = new Date();
+	var n = d.getFullYear();
+	if (Number(document.getElementById("id_year_number").value) < n) {
+		document.getElementById("id_year_number").value = "";
+		document.getElementById("id_year_number").placeholder = "";
+		document.getElementById("id_year_number").className = "alert";
+		document.getElementById("send_button").type = "button";
+	}
+	if (Number(document.getElementById("id_year_number").value) > (n+10)) {
+		document.getElementById("id_year_number").value = "";
+		document.getElementById("id_year_number").placeholder = "";
+		document.getElementById("id_year_number").className = "alert";
+		document.getElementById("send_button").type = "button";
+	}
+}
+function check_cvv_number() {
+	if(document.getElementById("id_cvv_number").value.match(numberinput))
+	{
+	}
+	else
+	{
+		document.getElementById("id_cvv_number").value = "";
+		document.getElementById("id_cvv_number").placeholder = "";
+		document.getElementById("id_cvv_number").className = "alert";
+		document.getElementById("send_button").type = "button";
+	}
+}
+function check_holder_name() {
+	if(document.getElementById("id_holder_name").value.match(letters))
+	{
+	}
+	else
+	{
+		document.getElementById("id_holder_name").value = "";
+		document.getElementById("id_holder_name").placeholder = "|msg_general_12_only_letters|";
+		document.getElementById("id_holder_name").className = "alert";
+		document.getElementById("send_button").type = "button";
+	}
+}
+</script>
+|get_price|
+|move_slides|
+</body>
+</html>

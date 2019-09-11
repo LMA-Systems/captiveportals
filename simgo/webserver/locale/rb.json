@@ -1,0 +1,594 @@
+{"en": {
+
+"msg_index2_01_hotspot_is":"Hotspot is",
+"msg_index2_02_your_hotspot":"Your hotspot device ",
+"msg_index2_03_has_no_internet":"has NO INTERNET CONNECTION",
+"msg_index2_04_please_wait":"Please wait for reconnect...",
+"msg_index2_05_you_still_have_daypasses":"You still have some daypasses left on this hotspot. Do you want to delete it and start new registration? ",
+"msg_index2_06_daypasses_will_be_lost":"All remaining daypasses will be lost.",
+"msg_index2_07_are_you_sure":"Are you sure?",
+"msg_index2_08_enter_act_number":"If you are a recurring user and already have an ACTIVATION CODE please enter it here:",
+"msg_index2_09_good_morning":"Good morning ",
+"msg_index2_10_good_afternoon":"Good afternoon ",
+"msg_index2_11_good_evening":"Good evening ",
+"msg_index2_12_welcome":"Welcome to Simgo Mobile WiFi service!",
+"msg_index2_13_new_user":"If you are a NEW USER please click here",
+"msg_index2_14_yes":"YES",
+"msg_index2_15_no":"NO",
+"msg_index2_16_free_unlimited_wifi":"FREE WIFI",
+"msg_index2_17_paid_access":"PAID ACCESS",
+"msg_index2_18_data_collected":"Your usage data will be collected",
+"msg_index2_19_data_not_collected":"Your usage data will <u>NOT</u> be collected",
+"msg_index2_20_paid_info_text":"Thank you for choosing the Simgo Paid WiFi Service. You will receive unlimited 4G/LTE connectivity without personalised advertisement and no data will be collected.",
+"msg_index2_21_free_info_text":"Thank you for choosing the Simgo Free WiFi Service. You will receive unlimited 4G/LTE connectivity, personalised advertisement and your anonymised data will be collected according to the EU Data Protection Laws.",
+"msg_index2_22_price_one_daypass":"Price for one daypass (24 hours) is :&nbsp",
+
+
+
+"msg_p_act_succ_01_daypass_activation_success":"Your Simgo Mobile Hotspot is now ready to use.<br>Please activate your hotspot!",
+"msg_p_act_succ_02_you_have":"You have",
+"msg_p_act_succ_03_more_daypasses_left":"more daypasses left",
+"msg_p_act_succ_04_activate_daypass":"Activate",
+
+"msg_p_act_fail_01_daypass_activation_failed":"Daypass Activation failed!!!",
+"msg_p_act_fail_02_no_more_daypass":"You have no more daypasses.",
+"msg_p_act_fail_03_buy_or_contact":"Buy new daypasses or contact our support.",
+
+
+"msg_p_payment_fail_01_payment_failed":"Payment failed!!!",
+
+
+"msg_p_cc_check_fail_01_payment_failed":"Payment failed!!!",
+
+"msg_p_new_01_firstname":"First Name",
+"msg_p_new_02_email":"E-mail",
+"msg_p_new_03_lastname":"Last Name",
+"msg_p_new_04_phonenumber":"Mobile Number",
+"msg_p_new_05_include_country_code":"Please select country code and enter mobile phone number.",
+"msg_p_new_06_address":"Address line",
+"msg_p_new_07_city":"City",
+"msg_p_new_08_postal_code":"Postal Code",
+"msg_p_new_09_country":"Country",
+"msg_p_new_10_enter_personal_details":"Please enter your personal details!",
+"msg_p_new_11_billing_payment_info":"<u><b>Billing and payment details:</b></u> will be used for your future purchases (e.g additional Daypasses) and for the deposit of your rental hotspot.",
+"msg_p_new_12_email_address_info":"<u><b>Email Address:</b></u> will be used to send you confirmations and invoices. ",
+
+
+"msg_f_new_01_please_fill_out_fields_below":"Please fill out the following anonymous survey to receive unlimited free data:",
+"msg_f_new_02_nationality":"Nationality",
+"msg_f_new_03_gender":"Gender",
+"msg_f_new_04_male":"Male",
+"msg_f_new_05_female":"Female",
+"msg_f_new_06_age_range":"Age Range",
+"msg_f_new_07_purpose_of_visit":"Purpose of visit",
+"msg_f_new_08_bussiness":"Business",
+"msg_f_new_09_holiday":"Leisure/Holiday",
+"msg_f_new_10_first_time_to_city":"Is this your first time visit to Vienna",
+"msg_f_new_11_how_long_will_stay":"How long will you stay",
+"msg_f_new_12_night":"night",
+"msg_f_new_13_nights":"nights",
+"msg_f_new_14_more_than":"more than",
+"msg_f_new_15_please_fill_out_form":"Please fill out the following section in order to log in with your other personal devices without having to fill out this form again. You will receive an activation code via text message (no roaming charges will occur).",
+"msg_f_new_16_grand_permission":" I accept to receive location-based services through my messaging apps",
+"msg_f_new_17_sms_gate_contact":"Sending verification SMS....",
+
+
+"msg_p_dp_add_01_creditcard_associated":"We will use your credit card associated with this account",
+
+"msg_p_enter_code_01_will_receive_sms":"Once you receive the text message/SMS please enter it here.Please store the code, you will need it later re-activate your hotspot.",
+"msg_p_enter_code_02_please_store_number":"You can share the code amongst your family and friends connected to the same hotspot.",
+"msg_p_enter_code_03_your_code":"Your ACTIVATION CODE is:",
+
+
+"msg_p_payment_succ_01_payment_success":"Payment Successful!!!",
+
+"msg_p_payment_01_credit_card_number":"CREDIT CARD NUMBER",
+"msg_p_payment_02_credit_card_holder":"CREDIT CARD HOLDER NAME",
+"msg_p_payment_03_expire_date":"EXPIRE DATE",
+"msg_p_payment_04_cvv":"CVV (3-DIGIT CODE)",
+
+
+"msg_p_summary_01_24-daypass_stay_active":"The 24-hour Daypass will be active until:",
+"msg_p_summary_02_Done":"Done",
+
+
+"msg_general_01_enter_number":"Enter CODE here",
+"msg_general_02_advert_popup_text":"The page will be loaded later...",
+"msg_general_03_send":"Send",
+"msg_general_04_only_numbers_letters":"Only numbers&letters",
+"msg_general_05_close":"Close",
+"msg_general_06_buy_new_daypass":"Buy new daypasses",
+"msg_general_07_go_back":"GO BACK",
+"msg_general_08_contact_support":"Please contact our SUPPORT",
+"msg_general_09_will_be_redirected":"You will be redirected in",
+"msg_general_10_second":"second",
+"msg_general_11_seconds":"seconds",
+"msg_general_12_only_letters":"Only letters",
+"msg_general_13_only_numbers":"Only numbers",
+"msg_general_14_only_numbers_1_30":"Only numbers (1-30)",
+"msg_general_15_wrong_format":"Wrong format",
+"msg_general_16_next":"Next",
+"msg_general_17_terms_accept":" I accept the Terms and Conditions and the Privacy Policy in accordance to the EU GDPR",
+"msg_general_18_banner_click":"Click on the Banner and automatically receive the voucher/ad via email",
+"msg_general_19_how_many_daypass_buy":"How many new daypasses you want to buy?",
+"msg_general_20_buy":"Buy",
+"msg_general_21_sending":"Sending",
+"msg_general_22_price_for_daypasses":"Price for daypasses ",
+"msg_general_23_phone_number_will_activate":"We will send SMS code to your phone number to activate the device ",
+
+
+ "test3":123},
+
+ "jp": {
+   "msg_index2_01_hotspot_is":"ルータは",
+   "msg_index2_02_your_hotspot":"あなたのルータデバイス  ",
+   "msg_index2_03_has_no_internet":"インターネットに接続していない",
+   "msg_index2_04_please_wait":"再接続中です...",
+   "msg_index2_05_you_still_have_daypasses":"このルータにはまだいくつかのクーポンが残っています。 削除して新しい登録を開始しますか？ ",
+   "msg_index2_06_daypasses_will_be_lost":"残りのクーポンはすべて失われます。",
+   "msg_index2_07_are_you_sure":"本当によろしいですか？",
+   "msg_index2_08_enter_act_number":"デイパスを有効にするためにあなたの電話番号を入力してください！",
+   "msg_index2_09_good_morning":"おはようございます ",
+   "msg_index2_10_good_afternoon":"こんにちは ",
+   "msg_index2_11_good_evening":"こんばんは ",
+   "msg_index2_12_welcome":"私たちのWi-Fiサービスへようこそ！",
+   "msg_index2_13_new_user":"新しいユーザー",
+   "msg_index2_14_yes":"はい",
+   "msg_index2_15_no":"いいえ",
+   "msg_index2_16_free_unlimited_wifi":"無料及び無制限の無線インターネット",
+   "msg_index2_17_paid_access":"有料アクセス",
+   "msg_index2_18_data_collected":"データが収集されます",
+   "msg_index2_19_data_not_collected":"データは収集されません",
+   "msg_index2_20_paid_info_text":"Thank you for choosing the Simgo Paid WiFi Service. You will receive unlimited 4G/LTE connectivity without personalised advertisement and no data will be collected.",
+   "msg_index2_21_free_info_text":"Thank you for choosing the Simgo Free WiFi Service. You will receive unlimited 4G/LTE connectivity, personalised advertisement and your anonymised data will be collected according to the EU Data Protection Laws.",
+   "msg_index2_22_price_one_daypass":"Price for one daypass (24 hours) is :",
+
+   "msg_p_act_succ_01_daypass_activation_success":"デイパスのアクティベーションが成功しました!!",
+   "msg_p_act_succ_02_you_have":"あなたが持っている",
+   "msg_p_act_succ_03_more_daypasses_left":"デイパスがまだ残っている",
+   "msg_p_act_succ_04_":" データパスを有効にする",
+
+
+   "msg_p_act_fail_01_daypass_activation_failed":"デイパスのアクティベーションに失敗しました!!!",
+   "msg_p_act_fail_02_no_more_daypass":"デイパスはありません.",
+   "msg_p_act_fail_03_buy_or_contact":"新しいデイパスを購入するか、当社のサポートにお問い合わせください!",
+
+
+   "msg_p_payment_fail_01_payment_failed":"支払い処理に失敗しました!!!",
+
+
+   "msg_p_cc_check_fail_01_payment_failed":"クレジットカードの確認に失敗しました!!!",
+
+   "msg_p_new_01_firstname":"名前（名）",
+   "msg_p_new_02_email":"電子メールアドレス",
+   "msg_p_new_03_lastname":"名前（姓）",
+   "msg_p_new_04_phonenumber":"携帯電話番号",
+   "msg_p_new_05_include_country_code":"国コードを選択し、携帯電話番号を記入してください",
+   "msg_p_new_06_address":"住所",
+   "msg_p_new_07_city":"区市町村",
+   "msg_p_new_08_postal_code":"郵便番号",
+   "msg_p_new_09_country":"国名",
+   "msg_p_new_10_enter_personal_details":"あなたの個人情報を入力してください！",
+   "msg_p_new_11_billing_payment_info":"<u><b>請求およびお支払いの詳細:</b></u> 今後の購入（たとえば、追加のデイパス）およびレンタルルータのデポジットに使用されます。",
+   "msg_p_new_12_email_address_info":"<u><b>電子メールアドレス:</b></u> お客様の確認と請求書を送信するために使用されます。 ",
+
+
+
+   "msg_f_new_01_please_fill_out_fields_below":"1日無制限のプランを受け取るには、以下の項目に入力してください。",
+   "msg_f_new_02_nationality":"国籍",
+   "msg_f_new_03_gender":"性別",
+   "msg_f_new_04_male":"男性",
+   "msg_f_new_05_female":"女性",
+   "msg_f_new_06_age_range":"年齢層",
+   "msg_f_new_07_purpose_of_visit":"訪問の目的",
+   "msg_f_new_08_bussiness":"ビジネス",
+   "msg_f_new_09_holiday":"休暇",
+   "msg_f_new_10_first_time_to_city":"初めての都市か？",
+   "msg_f_new_11_how_long_will_stay":"滞在予定日数？",
+   "msg_f_new_12_night":"夜",
+   "msg_f_new_13_nights":"泊",
+   "msg_f_new_14_more_than":"以上です",
+   "msg_f_new_15_please_fill_out_form":"このフォームをもう一度入力せずに、他のパーソナルデバイスにサインインするには、次のセクションに記入してください。 SMS経由でアクティベーションコードを受け取ります（ローミング手数料なし）。",
+   "msg_f_new_16_grand_permission":" 私はメッセージングアプリケーションを通じて位置情報サービスを受け入れます",
+   "msg_f_new_17_sms_gate_contact":"確認コードを送信...",
+
+   "msg_p_dp_add_01_creditcard_associated":"このアカウントに関連付けられたクレジットカードを使用します",
+
+   "msg_p_enter_code_01_will_receive_sms":"お客様の個人的なアクティベーション番号でSMSが届きます",
+   "msg_p_enter_code_02_please_store_number":"大切に保管してください。後で必要になります",
+   "msg_p_enter_code_03_your_code":"Your ACTIVATION CODE is:&nsp",
+
+   "msg_p_payment_succ_01_payment_success":"支払いが完了しました!!!",
+
+   "msg_p_payment_01_credit_card_number":"クレジットカード番号",
+   "msg_p_payment_02_credit_card_holder":"クレジットカード保有者名",
+   "msg_p_payment_03_expire_date":"有効期限",
+   "msg_p_payment_04_cvv":"CVV（3桁のセキュリティコード）",
+
+
+   "msg_p_summary_01_24-daypass_stay_active":"24時間のパスは、以下の時間まで有効となります:",
+   "msg_p_summary_02_Done":"完了",
+
+
+   "msg_general_01_enter_number":"ここに番号を入力してください",
+   "msg_general_02_advert_popup_text":"ページは後でロードされます...",
+   "msg_general_03_send":"送信",
+   "msg_general_04_only_numbers_letters":"数字と文字のみ",
+   "msg_general_05_close":"閉じる",
+   "msg_general_06_buy_new_daypass":"新しいデイパスを購入する",
+   "msg_general_07_go_back":"戻る",
+   "msg_general_08_contact_support":"サポートにお問い合わせください ",
+   "msg_general_09_will_be_redirected":"リダイレクトされます",
+   "msg_general_10_second":"二番目",
+   "msg_general_11_seconds":"秒",
+   "msg_general_12_only_letters":"文字のみ",
+   "msg_general_13_only_numbers":"数字のみ",
+   "msg_general_14_only_numbers_1_30":"数字のみ（1~30文字まで）",
+   "msg_general_15_wrong_format":"ご利用できない文字が含まれています",
+   "msg_general_16_next":"次",
+   "msg_general_17_terms_accept":" 私は<u>利用規約</u>に同意します。</u>",
+   "msg_general_18_banner_click":"バナーをクリックし、バウチャー/広告を電子メールで自動的に受け取る",
+   "msg_general_19_how_many_daypass_buy":"何日分のデイパスを購入しますか？",
+   "msg_general_20_buy":"購入",
+   "msg_general_21_sending":"送信中",
+   "msg_general_22_price_for_daypasses":"デイパス料金： ",
+   "msg_general_23_phone_number_will_activate":"アクティベーションコードがお客様の電話番号に届き、デバイスが有効になります",
+
+
+
+  "test3":123},
+
+  "il": {
+    "msg_index2_01_hotspot_is":"נקודה חמה היא",
+    "msg_index2_02_your_hotspot":"מכשיר הנקודה החמה שלך",
+    "msg_index2_03_has_no_internet":"אין חיבור אינטרנט",
+    "msg_index2_04_please_wait":"המתן לחיבור חוזר...",
+    "msg_index2_05_you_still_have_daypasses":"נשארו לך מספר תוכניות על המכשיר. האם תרצה/י למחוק אותן ולהתחיל רישום מחדש? ",
+    "msg_index2_06_daypasses_will_be_lost":"כל התוכניות הנותרות יימחקו.",
+    "msg_index2_07_are_you_sure":"האם את/ה בטוח/ה?",
+    "msg_index2_08_enter_act_number":"הקלד/י את הקוד האישי שלך כדי לשימוש באינטרנט!",
+    "msg_index2_09_good_morning":"בוקר טוב ",
+    "msg_index2_10_good_afternoon":"אחר צהריים טובים ",
+    "msg_index2_11_good_evening":"ערב טוב ",
+    "msg_index2_12_welcome":"ברוכים הבאים!",
+    "msg_index2_13_new_user":"משתמש/ת חדש/ה",
+    "msg_index2_14_yes":"כן",
+    "msg_index2_15_no":"לא",
+    "msg_index2_16_free_unlimited_wifi":"רשת אלחוטית חינמית",
+    "msg_index2_17_paid_access":"גישה בתשלום",
+    "msg_index2_18_data_collected":"נתוני השימוש שלך יישמרו",
+    "msg_index2_19_data_not_collected":"נתוני סטטוס השימוש לא יישמרו",
+    "msg_index2_20_paid_info_text":"Thank you for choosing the Simgo Paid WiFi Service. You will receive unlimited 4G/LTE connectivity without personalised advertisement and no data will be collected.",
+    "msg_index2_21_free_info_text":"Thank you for choosing the Simgo Free WiFi Service. You will receive unlimited 4G/LTE connectivity, personalised advertisement and your anonymised data will be collected according to the EU Data Protection Laws.",
+    "msg_index2_22_price_one_daypass":"Price for one daypass (24 hours) is :",
+
+
+    "msg_p_act_succ_01_daypass_activation_success":"התוכנית מוכנה להפעלה!!",
+    "msg_p_act_succ_02_you_have":"יתרת חשבונך היא ",
+    "msg_p_act_succ_03_more_daypasses_left":" תוכניות.",
+    "msg_p_act_succ_04_activate_daypass":"הפעל את התוכנית",
+
+    "msg_p_act_fail_01_daypass_activation_failed":"הפעלת התוכנית נכשלה!!!",
+    "msg_p_act_fail_02_no_more_daypass":"אין יותר תוכניות בחשבונך.",
+    "msg_p_act_fail_03_buy_or_contact":"רכוש/י תוכניות חדשות או פנה/י לשירות הלקוחות שלנו. ",
+
+
+    "msg_p_payment_fail_01_payment_failed":"התשלום נכשל!!!",
+
+
+    "msg_p_cc_check_fail_01_payment_failed":"אימות כרטיס האשראי נכשל!",
+
+    "msg_p_new_01_firstname":"שם פרטי",
+    "msg_p_new_02_email":"דואר אלקטרוני",
+    "msg_p_new_03_lastname":"שם משפחה",
+    "msg_p_new_04_phonenumber":"מספר טלפון נייד",
+    "msg_p_new_05_include_country_code":"בחר/י קוד מדינה ומלא/י מספר טלפון נייד",
+    "msg_p_new_06_address":"כתובת",
+    "msg_p_new_07_city":"עיר",
+    "msg_p_new_08_postal_code":"מיקוד",
+    "msg_p_new_09_country":"מדינה",
+    "msg_p_new_10_enter_personal_details":"נא להקליד פרטים אישיים!",
+    "msg_p_new_11_billing_payment_info":" <u><b> פרטי חיוב ותשלום: </b></u> ישמשו אותך לרכישות עתידיות ולפיקדון על המכשיר.",
+    "msg_p_new_12_email_address_info":"<u><b>דואר אלקטרוני:</b></u> ישמש אותך כדי לשלוח לך אישורים וחשבוניות. ",
+
+
+
+    "msg_f_new_01_please_fill_out_fields_below":"נא למלא את השדות למטה כדי לקבל נתונים ללא הגבלה ליום.",
+    "msg_f_new_02_nationality":"אזרחות",
+    "msg_f_new_03_gender":"מין",
+    "msg_f_new_04_male":"זכר",
+    "msg_f_new_05_female":"נקבה",
+    "msg_f_new_06_age_range":"טווח גילאים",
+    "msg_f_new_07_purpose_of_visit":"מטרת הביקור",
+    "msg_f_new_08_bussiness":"עסק",
+    "msg_f_new_09_holiday":"פנאי",
+    "msg_f_new_10_first_time_to_city":"פעם ראשונה בעיר",
+    "msg_f_new_11_how_long_will_stay":"כמה זמן תשאר/י",
+    "msg_f_new_12_night":"לילה",
+    "msg_f_new_13_nights":"לילות",
+    "msg_f_new_14_more_than":"יותר מ",
+    "msg_f_new_15_please_fill_out_form":"מלא/י את החלק הבא כדי להיכנס עם המכשירים האישיים האחרים שלך מבלי למלא טופס זה שוב. את/ה תקבל/י קוד הפעלה באמצעות מסרון (ללא דמי נדידה).",
+    "msg_f_new_16_grand_permission":" אני מסכים/מה לקבל שירותים מבוססי מיקום באמצעות יישומי ההודעות שלי",
+    "msg_f_new_17_sms_gate_contact":"שולח הודעת אימות ...",
+
+
+    "msg_p_dp_add_01_creditcard_associated":"הרכישה תתבצע בכרטיס האשראי המשויך לחשבונך",
+
+    "msg_p_enter_code_01_will_receive_sms":"כעת תקבל מסרון עם מספר ההפעלה האישי שלך.",
+    "msg_p_enter_code_02_please_store_number":"נא לשמור על מספר זה להזדהות חוזרת והפעלת התוכנית שנרכשה.",
+    "msg_p_enter_code_03_your_code":"Your ACTIVATION CODE is:&nsp",
+
+    "msg_p_payment_succ_01_payment_success":"התשלום בוצע בהצלחה!!!",
+
+    "msg_p_payment_01_credit_card_number":"מספר כרטיס אשראי",
+    "msg_p_payment_02_credit_card_holder":"שם בעל הכרטיס",
+    "msg_p_payment_03_expire_date":"תוקף הכרטיס",
+    "msg_p_payment_04_cvv":"CVV (שלוש הספרות בגב הכרטיס)",
+
+    "msg_p_summary_01_24-daypass_stay_active":"תוכנית 24 שעות ביממה תהיה פעילה עד:",
+    "msg_p_summary_02_Done":"בוצע",
+
+
+    "msg_general_01_enter_number":"הקלד את הקוד האישי שלך כאן",
+    "msg_general_02_advert_popup_text":"הדף ייטען מאוחר יותר ...",
+    "msg_general_03_send":"שלח",
+    "msg_general_04_only_numbers_letters":"נא להקליד מספרים ואותיות בלבד",
+    "msg_general_05_close":"סגור",
+    "msg_general_06_buy_new_daypass":"רכישת תוכניות חדשות",
+    "msg_general_07_go_back":"חזור",
+    "msg_general_08_contact_support":"צור/י קשר עם התמיכה",
+    "msg_general_09_will_be_redirected":"את/ה תועבר/י בעוד מספר שניות...",
+    "msg_general_10_second":"שנייה",
+    "msg_general_11_seconds":"שניות",
+    "msg_general_12_only_letters":"אותיות בלבד",
+    "msg_general_13_only_numbers":"מספרים בלבד",
+    "msg_general_14_only_numbers_1_30":"מספרים בלבד (1-30)",
+    "msg_general_15_wrong_format":"שגיאה",
+    "msg_general_16_next":"הבא",
+    "msg_general_17_terms_accept":" אני מסכים ל <u> לתנאים ולהגבלות </u>.",
+    "msg_general_18_banner_click":"לחץ על הבאנר ולקבל באופן אוטומטי את השובר / המודעה באמצעות הדואל",
+    "msg_general_19_how_many_daypass_buy":"כמה תוכניות תרצה/י לרכוש?",
+    "msg_general_20_buy":"קנה",
+    "msg_general_21_sendingsending":"שולח",
+    "msg_general_22_price_for_daypasses":"מחיר עבור תוכנית: ",
+    "msg_general_23_phone_number_will_activate":"  אנו נשלח קוד למספר הטלפון שלך להפעלת ההתקן.",
+
+
+     "test3":123
+   },
+
+
+"de": {
+"msg_index2_01_hotspot_is":"Hotspot ist",
+"msg_index2_02_your_hotspot":"Ihr Hotspot Gerät ",
+"msg_index2_03_has_no_internet":"hat KEINE INTERNETVERBINDUNG",
+"msg_index2_04_please_wait":"Bitte warten Sie auf die Verbindung...",
+"msg_index2_05_you_still_have_daypasses":"You still have some daypasses left on this hotspot. Do you want to delete it and start new registration? ",
+"msg_index2_06_daypasses_will_be_lost":"All remaining daypasses will be lost.",
+"msg_index2_07_are_you_sure":"Bist du sicher?",
+"msg_index2_08_enter_act_number":"Bitte geben Sie Ihre persönliche Nummer ein, um die Daypass zu aktivieren!",
+"msg_index2_09_good_morning":"Guten Morgen ",
+"msg_index2_10_good_afternoon":"Guten Tag ",
+"msg_index2_11_good_evening":"Guten Abend ",
+"msg_index2_12_welcome":"Willkommen zu unserem WiFi-Service!",
+"msg_index2_13_new_user":"Ich habe die Nummer nicht",
+"msg_index2_14_yes":"JA",
+"msg_index2_15_no":"NEIN",
+"msg_index2_16_free_unlimited_wifi":"KOSTENLOSER ZUGANG",
+"msg_index2_17_paid_access":"KOSTENPFLICHTIGER ZUGANG",
+"msg_index2_18_data_collected":"Ihre Nutzungsdaten werden gesammelt ",
+"msg_index2_19_data_not_collected":"Ihre Nutzungsdaten werden <u>NICHT</u> gesammelt",
+"msg_index2_20_paid_info_text":"Thank you for choosing the Simgo Paid WiFi Service. You will receive unlimited 4G/LTE connectivity without personalised advertisement and no data will be collected.",
+"msg_index2_21_free_info_text":"Thank you for choosing the Simgo Free WiFi Service. You will receive unlimited 4G/LTE connectivity, personalised advertisement and your anonymised data will be collected according to the EU Data Protection Laws.",
+"msg_index2_22_price_one_daypass":"Price for one daypass (24 hours) is :",
+
+
+"msg_p_act_succ_01_daypass_activation_success":"Laden des Tagespasses erfolgreich !!!",
+"msg_p_act_succ_02_you_have":"Sie haben",
+"msg_p_act_succ_03_more_daypasses_left":"weitere Tagespasses übrig",
+"msg_p_act_succ_04_activate_daypass":"Tagespasses aktivieren",
+
+
+"msg_p_act_fail_01_daypass_activation_failed":"Die Aktivierung des Tagespasses ist fehlgeschlagen!!!",
+"msg_p_act_fail_02_no_more_daypass":"Sie haben keine Tagespasses mehr.",
+"msg_p_act_fail_03_buy_or_contact":"Kaufen Sie neue Tagespasses oder kontaktieren Sie unsere SUPPORT.",
+
+"msg_p_payment_fail_01_payment_failed":"Bezahlung fehlgeschlagen !!!",
+
+
+"msg_p_cc_check_fail_01_payment_failed":"Kreditkartenbestätigung fehlgeschlagen !!!",
+
+
+"msg_p_new_01_firstname":"Vorname",
+"msg_p_new_02_email":"E-mail",
+"msg_p_new_03_lastname":"Nachname",
+"msg_p_new_04_phonenumber":"Mobilenummer",
+"msg_p_new_05_include_country_code":"Bitte wählen Sie die Landesvorwahl und geben Sie die Handynummer ein.",
+"msg_p_new_06_address":"Adresse",
+"msg_p_new_07_city":"Stadt",
+"msg_p_new_08_postal_code":"Postleitzahl",
+"msg_p_new_09_country":"Land",
+"msg_p_new_10_enter_personal_details":"Bitte geben Sie Ihre persönlichen Daten ein!",
+"msg_p_new_11_billing_payment_info":"<u><b>Rechnungs- und Zahlungsdetails::</b></u> werden für Ihre zukünftigen Einkäufe (z. B. zusätzliche Tageskarten) und für die Hinterlegung Ihres Miet-Hotspots verwendet.",
+"msg_p_new_12_email_address_info":"<u><b>E-Mail-Adresse:</b></u> wird verwendet, um Ihnen Bestätigungen und Rechnungen zu senden. ",
+
+
+
+"msg_f_new_01_please_fill_out_fields_below":"Bitte füllen Sie die folgenden Felder aus um kostenlosen unlimiterten WiFI Zugang zu erhalten",
+"msg_f_new_02_nationality":"Nationalität",
+"msg_f_new_03_gender":"Geschlecht",
+"msg_f_new_04_male":"Männlich",
+"msg_f_new_05_female":"Weiblich",
+"msg_f_new_06_age_range":"Alter",
+"msg_f_new_07_purpose_of_visit":"Reisegrund",
+"msg_f_new_08_bussiness":"Geschäftlich",
+"msg_f_new_09_holiday":"Freizeit",
+"msg_f_new_10_first_time_to_city":"Sind Sie das erste Mal in der Stadt",
+"msg_f_new_11_how_long_will_stay":"Aufenthaltsdauer",
+"msg_f_new_12_night":"Nacht",
+"msg_f_new_13_nights":"Nächte",
+"msg_f_new_14_more_than":"mehr als",
+"msg_f_new_15_please_fill_out_form":"Bitte füllen Sie den folgenden Abschnitt aus, um sich mit Ihren anderen persönlichen Geräten anzumelden, ohne dieses Formular erneut ausfüllen zu müssen. Sie erhalten einen Aktivierungscode per SMS (keine Roaming-Gebühren).",
+"msg_f_new_16_grand_permission":"Ich akzeptiere standortbasierte Dienste über meine Messaging-Apps",
+"msg_f_new_17_sms_gate_contact":"Bestätigungs-SMS wird gesendet ....",
+
+"msg_p_dp_add_01_creditcard_associated":"Wir verwenden Ihre mit diesem Konto verknüpfte Kreditkarte",
+
+"msg_p_enter_code_01_will_receive_sms":"Sie erhalten in Kürze eine SMS mit Ihrer persönlichen Aktivierungsnummer.",
+"msg_p_enter_code_02_please_store_number":"Bitte speichern Sie es sorgfältig, Sie werden es später für die Aktivierung von Tagespässen benötigen.",
+"msg_p_enter_code_03_your_code":"Your ACTIVATION CODE is:&nsp",
+
+"msg_p_payment_succ_01_payment_success":"Bezahlung erfolgreich !!!",
+
+"msg_p_payment_01_credit_card_number":"KREDITKARTENNUMMER",
+"msg_p_payment_02_credit_card_holder":"KREDITKARTENHALTER NAME",
+"msg_p_payment_03_expire_date":"ABLAUFDATUM",
+"msg_p_payment_04_cvv":"CVV (3-stelliger Code)",
+
+"msg_p_summary_01_24-daypass_stay_active":"Der 24-Stunden-Tagespass ist aktiv bis:",
+"msg_p_summary_02_Done":"Erledigt",
+
+
+"msg_general_01_enter_number":"Nummer her eingeben",
+"msg_general_02_advert_popup_text":"Die Seite wird später geladen ...",
+"msg_general_03_send":"Senden",
+"msg_general_04_only_numbers_letters":"Nur Nummern&Buchstaben",
+"msg_general_05_close":"Schließen",
+"msg_general_06_buy_new_daypass":"Kaufen Sie neue Tagespasses",
+"msg_general_07_go_back":"Geh Zurück",
+"msg_general_08_contact_support":"Bitte kontaktieren Sie unsere SUPPORT",
+"msg_general_09_will_be_redirected":"Sie werden weitergeleitet ",
+"msg_general_10_second":"Sekunde",
+"msg_general_11_seconds":"Sekunden",
+"msg_general_12_only_letters":"Nur Buchstaben",
+"msg_general_13_only_numbers":"Nur Nummern",
+"msg_general_14_only_numbers_1_30":"Nur Nummern (1-30)",
+"msg_general_15_wrong_format":"falsches Format",
+"msg_general_16_next":"Nächste",
+"msg_general_17_terms_accept":"Ich akzeptiere die <u>Allgemeinen Geschäftsbedingungen</u>",
+"msg_general_18_banner_click":"Klicken Sie auf das Banner und erhalten Sie den Gutschein / die Anzeige automatisch per E-Mail",
+"msg_general_19_how_many_daypass_buy":"Wie viele neue Tagespasses möchten Sie kaufen?",
+"msg_general_20_buy":"Kaufen",
+"msg_general_21_sending":"Geschickt",
+"msg_general_22_price_for_daypasses":"Preis für Tagespasses ",
+"msg_general_23_phone_number_will_activate":"Wir werden SMS-Code an Ihre Telefonnummer senden, um das Gerät zu aktivieren ",
+
+"test2":"222"
+},
+
+ "fr": {
+"msg_index2_01_hotspot_is":"Hotspot est",
+"msg_index2_02_your_hotspot":"Votre hotspot ",
+"msg_index2_03_has_no_internet":"n’as pas de CONNECTION INTERNET",
+"msg_index2_04_please_wait":"SVP attendez la reconnection…",
+"msg_index2_05_you_still_have_daypasses":"Il vous restes des passes d’utilisation sur ce hotspot. Voulez vous les effacer et enregistrer à nouveau? ",
+"msg_index2_06_daypasses_will_be_lost":"Tous les passes d’utilisation seront perdus .",
+"msg_index2_07_are_you_sure":"Etes vous sure?",
+"msg_index2_08_enter_act_number":"Inserez le code d'ACTIVATION pour utilizer l’internet!",
+"msg_index2_09_good_morning":"Bonjour ",
+"msg_index2_10_good_afternoon":"Bon apres-midi ",
+"msg_index2_11_good_evening":"Bonsoir ",
+"msg_index2_12_welcome":"Bienvenue à notre service WiFi!",
+"msg_index2_13_new_user":"Je n’ai pas le numéro",
+"msg_index2_14_yes":"OUI",
+"msg_index2_15_no":"NON",
+"msg_index2_16_free_unlimited_wifi":"WIFI GRATUIT",
+"msg_index2_17_paid_access":"ACCESS PAYANT",
+"msg_index2_18_data_collected":"Vos données seront ramasser",
+"msg_index2_19_data_not_collected":"Vos données <u>NE SERONT PAS</u> ramasser",
+"msg_index2_20_paid_info_text":"Thank you for choosing the Simgo Paid WiFi Service. You will receive unlimited 4G/LTE connectivity without personalised advertisement and no data will be collected.",
+"msg_index2_21_free_info_text":"Thank you for choosing the Simgo Free WiFi Service. You will receive unlimited 4G/LTE connectivity, personalised advertisement and your anonymised data will be collected according to the EU Data Protection Laws.",
+"msg_index2_22_price_one_daypass":"Price for one daypass (24 hours) is :&nbsp",
+
+"msg_p_act_succ_01_daypass_activation_success":"Chargement du passe d’utilisation accomplit",
+"msg_p_act_succ_02_you_have":"Il vous reste",
+"msg_p_act_succ_03_more_daypasses_left":",passes d’utilisation",
+"msg_p_act_succ_04_activate_daypass":"Activez passe d’utilisation",
+
+"msg_p_act_fail_01_daypass_activation_failed":"Activation du passe d’utilisation refuser!!",
+"msg_p_act_fail_02_no_more_daypass":"Il ne vous rests plus de passe d’utilisation.",
+"msg_p_act_fail_03_buy_or_contact":"Achetez des passes d’utilisation ou contactez notre service client.",
+
+
+"msg_p_payment_fail_01_payment_failed":"Paiement Refuser!!!",
+
+
+"msg_p_cc_check_fail_01_payment_failed":"Paiement Refuser!!!",
+
+"msg_p_new_01_firstname":"Prénom",
+"msg_p_new_02_email":"E-mail",
+"msg_p_new_03_lastname":"Nom de Famille",
+"msg_p_new_04_phonenumber":"Numero du portable",
+"msg_p_new_05_include_country_code":"Choisissez vote pays and entrez votre numero de portable.",
+"msg_p_new_06_address":"Addresse",
+"msg_p_new_07_city":"Ville",
+"msg_p_new_08_postal_code":"Code Postal",
+"msg_p_new_09_country":"Pays",
+"msg_p_new_10_enter_personal_details":"Entrez vos donnees personnels SVP!",
+"msg_p_new_11_billing_payment_info":"<u><b>Les detailles de facturation et de paiement:</b></u> seront utiliser pour les achats a venire (e.g passes d’utilisation) et pur la garantie de la location du hotspot.",
+"msg_p_new_12_email_address_info":"<u><b>Addresse e-mail:</b></u> sera utiliser pour les confirmations et les factures. ",
+
+
+
+"msg_f_new_01_please_fill_out_fields_below":"Remplissez les champs ci-dessous pour recevoir une utilisation gratuite et illimitée.",
+"msg_f_new_02_nationality":"Nationalitée",
+"msg_f_new_03_gender":"Sexe",
+"msg_f_new_04_male":"Homme",
+"msg_f_new_05_female":"Femme",
+"msg_f_new_06_age_range":"Gamme d’age ",
+"msg_f_new_07_purpose_of_visit":"Raison du voyage",
+"msg_f_new_08_business":"Affaire",
+"msg_f_new_09_holiday":"Plaisir",
+"msg_f_new_10_first_time_to_city":"Premiere fois dans cette ville",
+"msg_f_new_11_how_long_will_stay":"Combien de temps comptez vous rester?",
+"msg_f_new_12_night":"nuit",
+"msg_f_new_13_nights":"nuits",
+"msg_f_new_14_more_than":"plus de",
+"msg_f_new_15_please_fill_out_form":"Remplissez la section suivante pour vous identifier sans avoir besoin de remplire les formulaires a nouveau. Vous aller recevoir un code d’activation par message texto (sans frais).",
+"msg_f_new_16_grand_permission":" j'accepte de recevoir des messages basés sur ma localisation",
+"msg_f_new_17_sms_gate_contact":"Envoi de SMS de vérification...",
+
+
+"msg_p_dp_add_01_creditcard_associated":"Nous utiliserons la carte de credit associées avec ce compte",
+
+"msg_p_enter_code_01_will_receive_sms":"Vous alley recevoir un texto avec votre numero d’activation PERSONEL tout de suite.",
+"msg_p_enter_code_02_please_store_number":"Gardez le, vous en aurez besoin pour activer les passes d’utilisation.",
+"msg_p_enter_code_03_your_code":"Your ACTIVATION CODE is:&nsp",
+
+"msg_p_payment_succ_01_payment_success":"Paiement Réussit!!!",
+
+"msg_p_payment_01_credit_card_number":"NUMERO CARTE DE CREDIT",
+"msg_p_payment_02_credit_card_holder":"NOM DU TITULAIRE",
+"msg_p_payment_03_expire_date":"DATE D’EXPIRATION",
+"msg_p_payment_04_cvv":"CVV (CODE A 3 CHIFFRES AU DOS DE LA CARTE)",
+
+
+"msg_p_summary_01_24-daypass_stay_active":"Le passe d’utilisation de 24-heures sera actif jusqu’a:",
+"msg_p_summary_02_Done":"Operation reussite",
+
+
+"msg_general_01_enter_number":"Numero",
+"msg_general_02_advert_popup_text":"La page sera télécharger plus tard…",
+"msg_general_03_send":"Envoi",
+"msg_general_04_only_numbers_letters":"Uniquement chiffres & lettres",
+"msg_general_05_close":"Fermé",
+"msg_general_06_buy_new_daypass":"Acheter un nouveau passe d’utilisation",
+"msg_general_07_go_back":"REVENIR",
+"msg_general_08_contact_support":"Contacter le service client",
+"msg_general_09_will_be_redirected":"Vous serez rediriger",
+"msg_general_10_second":"second",
+"msg_general_11_seconds":"secondes",
+"msg_general_12_only_letters":"Uniquement des lettres",
+"msg_general_13_only_numbers":"Uniquement des chiffres",
+"msg_general_14_only_numbers_1_30":"Seulement des chiffres entre 1 à 30",
+"msg_general_15_wrong_format":"Format incorrecte",
+"msg_general_16_next":"Suivant",
+"msg_general_17_terms_accept":"J’accepte les conditions de service et la police de confidentialitée en accord avec la RGPD",
+"msg_general_18_banner_click":"Cliquez sur la bannière pour recevoir automatiquement le bon/annonce par courrier électronique.",
+"msg_general_19_how_many_daypass_buy":"Combien de passes d’utilisation voulez vous acheter?",
+"msg_general_20_buy":"Achete",
+"msg_general_21_sending":"En cours d’envoi",
+"msg_general_22_price_for_daypasses":"Prix des passes d’utilisation ",
+"msg_general_23_phone_number_will_activate":"Nous enverrons un texto a votre telephone avec un code pour activer le service"
+}
+}

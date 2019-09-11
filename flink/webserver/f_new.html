@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>|provider| - |msg_index2_01_hotspot_is| |_CHECK_ONLINE_|</title>
+  |meta_data|
+  <link rel="stylesheet" href="|cssfile|">
+  |char_set|
+  |jquery|
+</head>
+<body>
+  <div class="x-content">
+    |sms_1st||sendSMS_TS||sms_2nd|
+    <div class="row">
+      <div class="xwd-3 xwt-3 ">
+        <p align="center" style="margin:-10px 0px -13px 0px; padding: 0px 0px 0px 0px; font-size: 10px">
+          <a href="index2.html" class="no-url-link light" style="margin:0 auto; display:block"><- |msg_general_07_go_back|
+          </a>
+        </p>
+      </div>
+      <div class="xwd-6 xwt-6">
+        <div id="show_logo" style="margin:-15px; padding: 0px 0px 0px 0px;" >
+          |logo|
+        </div>
+      </div>
+      <div class="xwd-3 xwt-3" style="margin:0px 0px 0px 0px; padding: 10px 0px 2px 0px;font-size: 10px;">
+      </div>
+    </div>
+    <br>
+    <form name="ID_NEWCUSTOMER" action="cmd" id="ID_NEWCUSTOMER" style="margin:0 auto;flex: 1;" method="post">
+      <div style="display:flex;flex-direction: column;">
+        <p id="smsgate_info_text" align="center" style="margin:0px 0px -13px 0px; padding: 10px 0px 0px 0px; font-size: 20px; display: none;">
+          <a  class="darktext" style="margin:0 auto; display:block"><b>|msg_f_new_17_sms_gate_contact|
+          </b></a>
+        </p>
+        <div id="text_to_hide_after_submit">
+        <p class="darktext" align="center" style="margin:0 auto;  max-width: 250px; padding: 5px 0px 10px 0px; font-size: 11px"><b>|msg_f_new_01_please_fill_out_fields_below|</b></p>
+        <div class="row">
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+          <div id="id_age_rangex" class="xwd-6 xwt-6 dropdown">
+            <select form="ID_NEWCUSTOMER" name="_save_age_range" onchange="check_id_age_range();" id="_save_id_age_range" class="|input_class|" value="" required >
+              <option value="">|msg_f_new_06_age_range|</option>
+              <option value="below 18">below 18</option>
+              <option value="18-29">18-29</option>
+              <option value="30-49">30-49</option>
+              <option value="50+">50+</option>
+            </select>
+          </div>
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+        </div>
+        <div class="row">
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+          <div id="id_genderx" class="xwd-6 xwt-6 dropdown">
+            <select form="ID_NEWCUSTOMER" name="_save_gender" onchange="check_id_gender();" id="_save_id_gender" class="|input_class|" value="" required >
+              <option value="">|msg_f_new_03_gender|</option>
+              <option value="male">|msg_f_new_04_male|</option>
+              <option value="female">|msg_f_new_05_female|</option>
+            </select>
+          </div>
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+        </div>
+        <div class="row">
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+          <div  id="id_purpose_of_visitx" class="xwd-6 xwt-6 dropdown">
+            <select form="ID_NEWCUSTOMER" name="_save_purpose_of_visit" onchange="check_id_purpose_of_visit();" id="_save_id_purpose_of_visit" class="|input_class|" value="" required >
+              <option value="">|msg_f_new_07_purpose_of_visit|</option>
+              <option value="bussiness">|msg_f_new_08_bussiness|</option>
+              <option value="holiday">|msg_f_new_09_holiday|</option>
+            </select>
+          </div>
+          <div class="xwd-3 xwt-4 mobile-off"></div>
+        </div>
+        <div class="row">
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+          <div  id="id_first_time_to_cityx"  class="xwd-6 xwt-6 dropdown">
+            <select form="ID_NEWCUSTOMER" name="_save_first_time_to_city" onchange="check_id_first_time_to_city();" id="_save_id_first_time_to_city" class="|input_class|" style="font-size:|fontsize|px;" value="" required >
+              <option value="">|msg_f_new_10_first_time_to_city|</option>
+              <option value="Yes">|msg_index2_14_yes|</option>
+              <option value="No">|msg_index2_15_no|</option>
+            </select>
+          </div>
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+        </div>
+        <div class="row">
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+          <div id="id_how_long_will_stayx" class="xwd-6 xwt-6 dropdown">
+            <select form="ID_NEWCUSTOMER" name="_save_how_long_will_stay" onchange="check_id_how_long_will_stay();" id="_save_id_how_long_will_stay" class="|input_class|" value="" required >
+              <option value="">|msg_f_new_11_how_long_will_stay|</option>
+              <option value="1">1 |msg_f_new_12_night|</option>
+              <option value="2">2 |msg_f_new_13_nights|</option>
+              <option value="3-6">3-6 |msg_f_new_13_nights|</option>
+              <option value="6+">|msg_f_new_14_more_than| 6 |msg_f_new_13_nights|</option>
+            </select>
+          </div>
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+        </div>
+        <div class="row">
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+          <div  class="xwd-6 xwt-6 ">
+
+            <div id="noHover" class="|input_class| disabled" style="|number_div_styles|">
+              <select name="countries" id="countries" class="|input_class|" style="|select_styles|">
+                |countries|
+              </select>
+              <input type="text"  id="_save_id_phone_field" placeholder="|msg_p_new_04_phonenumber|" maxlength="14" minlength="10"
+              class="|input_class|" style="|input_styles|" autocomplete="off" required  onclick="noAlertnumber(_save_id_phone_field)">
+            </div>
+            <p align="center" style="margin:0px 0px -13px 0px; padding: 10px 0px 0px 0px; font-size: 14px">
+              <a  class="darktext" style="margin:0 auto; display:block"><b>|msg_p_new_05_include_country_code|
+              </b></a>
+            </p>
+            <br><br>
+            <p align="center" style="margin:-23px 0px 0px 0px; padding: 0px 0px 5px 0px; font-size: 14px">
+              <a class="darktext"  style="margin:0 auto; display:block"><b>|msg_general_23_phone_number_will_activate|
+              </b></a>
+            </p>
+          </div>
+          <div class="xwd-3 xwt-3 mobile-off"></div>
+        </div>
+        <p align="center" class="darktext" style="margin:0 auto; text-align: justify; max-width: 250px; padding: 0px 0px 0px 0px; font-size: 11px; display:|f_new_please_fill_out_form_visibility|;"><b>|msg_f_new_15_please_fill_out_form|</b></p>
+        <br>
+        <div class="row" style="padding-left:30px;display:|terms_condition_checkbox|;">
+          <div class="xwd-4 xwt-4 mobile-off"></div>
+          <div  class="xwd-4 xwt-4" style="margin:0 auto;padding:0;">
+            <div class="" style="float:left; width: 20px;">
+              <input class="" id="check1" name=""  value="" title="" placeholder="" |checkbox_terms_required| type="checkbox">
+            </div>
+            <div class="" style="float:left; width: 90%; margin-top:4px;">
+              <p id="id_terms" class="darktext" style="margin:0px 0px 0px 0px; padding-left: 10px;font-size:10px"><b>|msg_general_17_terms_accept|</b></p>
+            </div>
+          </div>
+          <div class="xwd-4 xwt-4 mobile-off"></div>
+        </div>
+        <div class="row" style="padding-left:30px;display:|permission_checkbox|;">
+          <div class="xwd-4 xwt-4 mobile-off"></div>
+          <div  class="xwd-4 xwt-4 " style="margin:0 auto;padding:0;">
+            <div class="" style="float:left; width: 20px;">
+              <input class="" id="check2" name=""  value="" title="" placeholder="" |checkbox_locations_required| type="checkbox">
+            </div>
+            <div class="" style="float:left; width: 90%;">
+              <p class="darktext" style="margin:4px 0px 0px 0px; padding-left: 10px;font-size:10px"><b>|msg_f_new_16_grand_permission|</b>
+              </p>
+              <br>
+            </div>
+          </div>
+          <div class="xwd-4 xwt-4 mobile-off"></div>
+        </div>
+
+
+      </div>
+        <br>
+        <div id="order_first">
+          <p align="center" style="margin:0 auto; padding: 0px 10px 0px 0px; font-size: 8px;display:|bannerclickinfo_visibility|">|msg_general_18_banner_click|</p>
+          |advert_slideshow_start||msg_general_02_advert_popup_text||advert_slideshow_end|
+        </div>
+        <br>
+        <input type="hidden" name="_save_nationality" id="nationality_from_phone_number" value="">
+        <input type="hidden" name="_save_phone_field" id="full_phone_number" value="">
+        <input type="hidden" name="_cmd_next_page_" id="_next-page_" value="sys_send_sms.html" >
+        <input type="hidden" name="_cmd_add_daypass_" id="_add_daypass" value="yes">
+          <button id="send_button" type="button" form="ID_NEWCUSTOMER" value="button"
+          class="button" style="margin:0 auto; width:230px; display:block" onclick="check_form()">|msg_general_16_next|</button>
+        <br>
+      </form>
+    </div>
+    <br>
+  </div>
+  |footer|
+  <script>
+  $(document).ready(function() {
+    $("#countries").msDropdown();
+  });
+  function noAlert(ident) {
+    document.getElementById(ident.id).className = "|input_class|";
+  }
+  function noAlertnumber(ident) {
+    document.getElementById(ident.id).className = "|input_class|";
+    document.getElementById(ident.id).placeholder = "|msg_p_new_04_phonenumber|";
+
+  }
+  function check_form()
+  {
+    var phoneinput =  /^[0-9]+$/;
+    var  checkbox_terms_required = false;
+    var checkbox_locations_required = false;
+    var is_zero_on_first_place = document.getElementById("_save_id_phone_field").value.indexOf("0");
+    if (document.getElementById("check1").required == true) {
+      if (document.getElementById("check1").checked ) {checkbox_terms_required = true; }
+    }
+    if (document.getElementById("check1").required == false) {
+      checkbox_terms_required = true;
+    }
+    if (document.getElementById("check2").required == true) {
+      if (document.getElementById("check2").checked) {checkbox_locations_required = true; }
+    }
+    if (document.getElementById("check2").required == false) {
+      checkbox_locations_required = true;
+    }
+
+    if(
+      document.getElementById("_save_id_gender").value !="" &&
+      document.getElementById("_save_id_age_range").value !="" &&
+      document.getElementById("_save_id_purpose_of_visit").value !="" &&
+      document.getElementById("_save_id_how_long_will_stay").value !="" &&
+      document.getElementById("_save_id_phone_field").value.match(phoneinput) &&
+      document.getElementById("_save_id_first_time_to_city").value !="" &&
+      checkbox_terms_required &&
+      checkbox_locations_required)
+      {
+        while (is_zero_on_first_place == 0) {
+          document.getElementById("_save_id_phone_field").value = document.getElementById("_save_id_phone_field").value.substring(1);
+          is_zero_on_first_place = document.getElementById("_save_id_phone_field").value.indexOf("0");
+        }
+
+        document.getElementById("full_phone_number").value = document.getElementById("countries").value + document.getElementById("_save_id_phone_field").value;
+        document.getElementById("nationality_from_phone_number").value = document.getElementsByTagName("option")[document.getElementById("countries").selectedIndex+19].getAttribute("data-title");
+        $("#send_button").fadeOut(250);
+        $("#text_to_hide_after_submit").fadeOut(250,function()
+        { $("#smsgate_info_text").fadeIn(250);
+      });
+
+
+        $.post("cmd",
+        {
+          _cmd_next_page_:$("#_next-page_").val(),
+          _cmd_add_daypass_:$("#_add_daypass").val(),
+          _save_gender:$("#_save_id_gender").val(),
+          _save_phone_field:$("#full_phone_number").val(),
+          _save_nationality:$("#nationality_from_phone_number").val(),
+          _save_age_range:$("#_save_id_age_range").val(),
+          _save_first_time_to_city:$("#_save_id_first_time_to_city").val(),
+          _save_how_long_will_stay:$("#_save_id_how_long_will_stay").val(),
+          _save_purpose_of_visit:$("#_save_id_purpose_of_visit").val(),
+          _cmd_send_sms_:"yes"
+        },
+        function(data, status){
+          if (status=="success"){
+            window.open('http://want2be.online/sys_ver_sms.html','_self');
+          }
+          else {
+            window.open('http://want2be.online/index2.html','_self');
+          }
+
+        });
+
+
+      }
+
+      else
+      {
+        document.getElementById("send_button").type = "button";
+      }
+
+      check_id_gender();
+      check_id_age_range();
+      check_id_purpose_of_visit();
+      check_id_how_long_will_stay();
+      check_id_first_time_to_city();
+      check_phonenumber();
+    }
+
+    function check_phonenumber(){
+      var phoneinput =  /^[0-9]+$/;
+      if(document.getElementById("_save_id_phone_field").value.match(phoneinput))
+      {
+      }
+      else
+      {
+        document.getElementById("_save_id_phone_field").value = "";
+        document.getElementById("_save_id_phone_field").placeholder = "|msg_general_15_wrong_format|";
+        document.getElementById("_save_id_phone_field").className = "alert";
+        document.getElementById("send_button").type = "button";
+      }
+    }
+
+    function check_id_gender() {
+      if (document.getElementById("_save_id_gender").value !="" ){
+        document.getElementById("id_genderx").className = "xwd-6 xwt-6 dropdown";
+      }
+
+      else {
+        document.getElementById("id_genderx").className = "xwd-6 xwt-6 alertx";
+        document.getElementById("send_button").type = "button";
+      }
+    }
+    function check_id_age_range() {
+      if (document.getElementById("_save_id_age_range").value !="" ){
+        document.getElementById("id_age_rangex").className = "xwd-6 xwt-6 dropdown";
+      }
+      else {
+        document.getElementById("id_age_rangex").className = "xwd-6 xwt-6 alertx";
+        document.getElementById("send_button").type = "button";
+      }
+    }
+    function check_id_purpose_of_visit() {
+      if (document.getElementById("_save_id_purpose_of_visit").value !="" ){
+        document.getElementById("id_purpose_of_visitx").className = "xwd-6 xwt-6 dropdown";
+      }
+      else {
+        document.getElementById("id_purpose_of_visitx").className = "xwd-6 xwt-6 alertx";
+        document.getElementById("send_button").type = "button";
+      }
+    }
+    function check_id_how_long_will_stay() {
+      if (document.getElementById("_save_id_how_long_will_stay").value !="" ){
+        document.getElementById("id_how_long_will_stayx").className = "xwd-6 xwt-6 dropdown";
+      }
+      else {
+        document.getElementById("id_how_long_will_stayx").className = "xwd-6 xwt-6 alertx";
+        document.getElementById("send_button").type = "button";
+      }
+    }
+    function check_id_first_time_to_city() {
+      if (document.getElementById("_save_id_first_time_to_city").value !="" ){
+        document.getElementById("id_first_time_to_cityx").className = "xwd-6 xwt-6 dropdown";
+      }
+      else {
+        document.getElementById("id_first_time_to_cityx").className = "xwd-6 xwt-6 alertx";
+        document.getElementById("send_button").type = "button";
+      }
+    }
+    </script>
+    |move_slides|
+  </body>
+  </html>

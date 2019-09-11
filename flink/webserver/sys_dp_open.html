@@ -1,0 +1,14 @@
+<html>
+<body>
+	<script>
+	function open_hotspot() {
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("POST", "cmd", true);
+		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xhttp.send("_cmd_open_connection_");
+	}
+	open_hotspot();
+  setTimeout(function(){ window.open("http://want2be.online/sys_open_pages.html","_self"); }, 1500);
+</script>
+</body>
+</html>

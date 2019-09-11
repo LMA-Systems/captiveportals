@@ -1,0 +1,12 @@
+<html>
+<body>
+<form name="payment_success_form" action="cmd" id="payment_success_form" method="post">
+	<input type="hidden" name="_verify_daypassnumber_positive" id="verify_success" value="yes" >
+	<input type="hidden" name="_verify_success_url" id="verify_success" value="p_act_succ.html" >
+	<input type="hidden" name="_verify_fail_url" id="verify_failed" value="sys_new_user_check.html">
+</form>
+<script>
+document.getElementById("payment_success_form").submit();
+</script>
+</body>
+</html>

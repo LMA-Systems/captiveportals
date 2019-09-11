@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|provider| - |msg_index2_01_hotspot_is| |_CHECK_ONLINE_|</title>
+	|meta_data|
+	<link rel="stylesheet" href="|cssfile|">
+	|char_set|
+	|jquery|
+</head>
+<body>
+	<div class="x-content">
+		|sms_1st||sendSMS_TS||sms_2nd|
+		<div class="row">
+			<div class="xwd-3 xwt-3 ">
+				<p align="center" style="margin:-10px 0px -13px 0px; padding: 0px 0px 0px 0px; font-size: 10px">
+					<a href="index2.html" class="no-url-link light" style="margin:0 auto; display:block"><- |msg_general_07_go_back|
+					</a>
+				</p>
+			</div>
+			<div class="xwd-6 xwt-6">
+				<div id="show_logo" style="margin:-15px; padding: 0px 0px 0px 0px;" >
+					|logo|
+				</div>
+			</div>
+			<div class="xwd-3 xwt-3" style="margin:0px 0px 0px 0px; padding: 10px 0px 2px 0px;font-size: 10px;">
+			</div>
+		</div>
+		<form name="NEWCUSTOMER" action="cmd" id="ID_NEWCUSTOMER" style="margin:0 auto;" method="post">
+			<div style="display:flex;flex-direction: column;">
+				<p id="smsgate_info_text" align="center" style="margin:0px 0px -13px 0px; padding: 10px 0px 0px 0px; font-size: 20px; display: none;">
+					<a  class="darktext" style="margin:0 auto; display:block"><b>|msg_f_new_17_sms_gate_contact|
+					</b></a>
+				</p>
+				<div id="text_to_hide_after_submit">
+					<div class="row">
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+						<div class="xwd-6 xwt-6">
+							<p align="center" class="darktext" style="margin:0; padding: 0px; font-size: 20px"><b>|msg_p_new_10_enter_personal_details|</b>
+							</p>
+						</div>
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+					</div>
+					<div class="row" style="display:|firsname_show|">
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+						<div class="xwd-6 xwt-6">
+							<input type="text" name="_save_first_name" id="id_first_name" placeholder="|msg_p_new_01_firstname|" maxlength="15" minlength="2"
+							class="|input_class|" style="margin:0 auto; display:block " autocomplete="on" required autofocus onfocus="noAlert(id_first_name,'|msg_p_new_01_firstname|')">
+						</div>
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+					</div>
+					<div class="row" style="display:|lastname_show|">
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+						<div class="xwd-6 xwt-6">
+							<input type="text" name="_save_last_name" id="id_last_name" placeholder="|msg_p_new_03_lastname|" maxlength="15" minlength="2"
+							class="|input_class|" style="margin:0 auto; display:block " autocomplete="on" required  onfocus="noAlert(id_last_name,'|msg_p_new_03_lastname|')">
+						</div>
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+					</div>
+					<div class="row" style="display:|email_show|">
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+						<div class="xwd-6 xwt-6">
+							<input type="email" name="_save_email_field" id="id_email_field" placeholder="|msg_p_new_02_email|"
+							class="|input_class|" style="margin:0 auto; display:block " autocomplete="on" required  onfocus="noAlert(id_email_field,'|msg_p_new_02_email|')">
+						</div>
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+					</div>
+					<div class="row" style="display:|phonenumber_show|">
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+						<div class="xwd-6 xwt-6">
+							<p align="center" style="margin:-23px 0px 0px 0px; padding: 0px 0px 5px 0px; font-size: 14px">
+								<a class="darktext"  style="margin:0 auto;  display:block"><b>|msg_general_23_phone_number_will_activate|
+								</b></a>
+							</p>
+							<div id="noHover" class="|input_class| disabled" style="|number_div_styles|">
+								<select name="countries" id="countries" class="|input_class|"  style="|select_styles|">
+									|countries|
+								</select>
+								<input type="text"  id="id_phone_field" placeholder="|msg_p_new_04_phonenumber|" maxlength="14" minlength="10"
+								class="|input_class| disabled" style="|input_styles|" autocomplete="off" required  onfocus="noAlertnumber(id_phone_field)">
+							</div>
+							<p align="center" style="margin:0px 0px -13px 0px; padding: 10px 0px 0px 0px; font-size: 14px">
+								<a  class="darktext" style="margin:0 auto;  display:block"><b>|msg_p_new_05_include_country_code|
+								</b></a>
+							</p>
+						</div>
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+					</div>
+					<div class="row" style="display:|address_show|">
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+						<div class="xwd-6 xwt-6">
+							<input type="text" name="_save_address_field" id="id_address_field" placeholder="|msg_p_new_06_address|"
+							class="|input_class|" style="margin:0 auto;  display:block " autocomplete="on" required  onfocus="noAlert(id_address_field,'|msg_p_new_06_address|')"
+							rows="3" maxlength="50" >
+						</div>
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+					</div>
+					<div class="row" style="display:|city_show|">
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+						<div class="xwd-6 xwt-6">
+							<input type="text" name="_save_city_name" id="id_city_name" placeholder="|msg_p_new_07_city|" maxlength="20" minlength="2"
+							class="|input_class|" style="margin:0 auto; display:block " autocomplete="on" required  onfocus="noAlert(id_city_name,'|msg_p_new_07_city|')">
+						</div>
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+					</div>
+					<div class="row" style="display:|postal_show|">
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+						<div class="xwd-6 xwt-6">
+							<input type="text" name="_save_postalcode" id="id_postalcode" placeholder="|msg_p_new_08_postal_code|" maxlength="7" minlength="4"
+							class="|input_class|" style="margin:0 auto; display:block " autocomplete="on" required  onfocus="noAlert(id_postalcode,'|msg_p_new_08_postal_code|')">
+						</div>
+						<div class="xwd-3 xwt-3 mobile-off"></div>
+					</div>
+					<br>
+					<p align="center" class="darktext" style="margin:0px 0px 0px 0px; padding: 0px 20px 0px 20px; font-size: 10px">|msg_p_new_11_billing_payment_info|</p>
+					<p align="center" class="darktext" style="margin:0px 0px 0px 0px; padding: 0px 20px 0px 20px; font-size: 10px">|msg_p_new_12_email_address_info|</p>
+				</div>
+				<div id="order_first">
+					<p align="center" class="darktext" style="margin:0 auto; padding: 0px 10px 0px 0px; font-size: 8px;display:|bannerclickinfo_visibility|">|msg_general_18_banner_click|</p>
+					|advert_slideshow_start||msg_general_02_advert_popup_text||advert_slideshow_end|
+				</div>
+				<br>
+				<input type="hidden" name="_save_nationality" id="nationality_from_phone_number" value="">
+				<input type="hidden" name="_save_phone_field" id="full_phone_number" value="">
+				<input type="hidden" name="_cmd_next_page_" id="_next-page_" value="sys_send_sms.html" >
+				<div class="xwd-12 xwt-12">
+					<button id="send_button" type="button" form="ID_NEWCUSTOMER" value="button"
+					class="button" style="margin:0 auto; display:block" onclick="check_form()">|msg_general_03_send|</button>
+				</div>
+			</div>
+		</form>
+		<br><br><br><br><br>
+	</div>
+	|footer|
+	<script>
+	$(document).ready(function() {
+		$("#countries").msDropdown();
+	});
+	function noAlert(ident,placehld) {
+		document.getElementById(ident.id).placeholder = placehld;
+		document.getElementById(ident.id).className = "|input_class|";
+	}
+
+	function noAlertnumber(ident) {
+		document.getElementById(ident.id).className = "|input_class|";
+		document.getElementById(ident.id).placeholder = "|msg_p_new_04_phonenumber|";
+	}
+
+	function alphanumeric(inputtxt)
+	{
+		var letters = /^[0-9a-zA-Z]+$/;
+		if(inputtxt.value.match(letters))
+		{
+			return true;
+		}
+		else
+		{
+			document.getElementById("id_first_name").value = "";
+			document.getElementById("id_first_name").placeholder = "|msg_general_04_only_numbers_letters|";
+			document.getElementById("id_first_name").className = "alert";
+			document.getElementById("send_button").type = "button";
+
+			return false;
+		}
+	}
+
+	function check_form()
+	{
+		var letters = /^[a-zA-Z ]+$/;
+		var phoneinput = /^[0-9]+$/;
+		var lettersnumbers = /^[0-9a-zA-Z]+$/;
+		var is_zero_on_first_place = document.getElementById("id_phone_field").value.indexOf("0");
+
+		if(document.getElementById("id_first_name").value.match(letters) &&
+		document.getElementById("id_last_name").value.match(letters) &&
+		document.getElementById("id_phone_field").value.match(phoneinput) &&
+		document.getElementById("id_city_name").value.match(letters) &&
+		document.getElementById("id_postalcode").value.match(lettersnumbers))
+		{
+			while (is_zero_on_first_place == 0) {
+				document.getElementById("id_phone_field").value = document.getElementById("id_phone_field").value.substring(1);
+				is_zero_on_first_place = document.getElementById("id_phone_field").value.indexOf("0");
+			}
+			document.getElementById("full_phone_number").value = document.getElementById("countries").value + document.getElementById("id_phone_field").value;
+			document.getElementById("nationality_from_phone_number").value = document.getElementsByTagName("option")[document.getElementById("countries").selectedIndex].getAttribute("data-title");
+			$("#send_button").fadeOut(250);
+			$("#text_to_hide_after_submit").fadeOut(250,function()
+			{ $("#smsgate_info_text").fadeIn(250);
+		});
+		$.post("cmd",
+		{
+			_cmd_next_page_:$("#_next-page_").val(),
+			_save_first_name:$("#id_first_name").val(),
+			_save_last_name:$("#id_last_name").val(),
+			_save_phone_field:$("#full_phone_number").val(),
+			_save_nationality:$("#nationality_from_phone_number").val(),
+			_save_email_field:$("#id_email_field").val(),
+			_save_address_field:$("#id_address_field").val(),
+			_save_city_name:$("#id_city_name").val(),
+			_save_postalcode:$("#id_postalcode").val(),
+			_cmd_send_sms_:"yes"
+		},
+		function(data, status){
+			if (status=="success"){
+				window.open('http://want2be.online/sys_ver_sms.html','_self');
+			}
+			else {
+				window.open('http://want2be.online/index2.html','_self');
+			}
+
+		});
+
+	}
+	if(document.getElementById("id_first_name").value.match(letters))
+	{
+	}
+	else
+	{
+		document.getElementById("id_first_name").value = "";
+		document.getElementById("id_first_name").placeholder = "|msg_general_12_only_letters|";
+		document.getElementById("id_first_name").className = "alert";
+	}
+
+
+	if(document.getElementById("id_last_name").value.match(letters))
+	{
+	}
+	else
+	{
+		document.getElementById("id_last_name").value = "";
+		document.getElementById("id_last_name").placeholder = "|msg_general_12_only_letters|";
+		document.getElementById("id_last_name").className = "alert";
+
+	}
+
+	if(document.getElementById("id_phone_field").value.match(phoneinput))
+	{
+	}
+	else
+	{
+		document.getElementById("id_phone_field").value = "";
+		document.getElementById("id_phone_field").placeholder = "|msg_general_15_wrong_format|";
+		document.getElementById("id_phone_field").className = "alert";
+	}
+	if(document.getElementById("id_city_name").value.match(letters))
+	{
+	}
+	else
+	{
+		document.getElementById("id_city_name").value = "";
+		document.getElementById("id_city_name").placeholder = "|msg_general_12_only_letters|";
+		document.getElementById("id_city_name").className = "alert";
+
+	}
+	if(document.getElementById("id_postalcode").value.match(lettersnumbers))
+	{
+	}
+	else
+	{
+		document.getElementById("id_postalcode").value = "";
+		document.getElementById("id_postalcode").placeholder = "|msg_general_04_only_numbers_letters|";
+		document.getElementById("id_postalcode").className = "alert";
+
+	}
+
+}
+</script>
+|move_slides|
+</body>
+</html>

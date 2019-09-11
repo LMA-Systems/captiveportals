@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|provider| - |msg_index2_01_hotspot_is| |_CHECK_ONLINE_|</title>
+	|meta_data|
+	<link rel="stylesheet" href="|cssfile|">
+	|char_set|
+	  |jquery|
+</head>
+<body>
+	<div class="x-content">
+		<div id="modal_code"  style="display: none; position: fixed;z-index: 1; padding-top: 100px; padding-left: 20%; padding-right: 20%; left: 0;top: 0;width: 100%;height: 100%; overflow: auto;">
+			<!-- Modal content -->
+			<div id="modal_code_content" style="  background-color: #fefefe;margin: auto;padding: 10px;border: 2px solid black;width: 80%;">
+				<p align="center">|msg_p_enter_code_03_your_code|<span style="color:red;"><b>&nbsp|_SESSION_activationCode|</b></span></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="xwd-3 xwt-3 ">
+				<p align="center" style="margin:-10px 0px -13px 0px; padding: 0px 0px 0px 0px; font-size: 10px">
+					<a href="index2.html" class="no-url-link light" style="margin:0 auto; display:block"><- |msg_general_07_go_back|
+					</a>
+				</p>
+			</div>
+			<div class="xwd-6 xwt-6">
+				<div id="show_logo" style="margin:-15px; padding: 0px 0px 0px 0px;" >
+					|logo|
+				</div>
+			</div>
+			<div class="xwd-3 xwt-3" style="margin:0px 0px 0px 0px; padding: 10px 0px 2px 0px;font-size: 10px;">
+			</div>
+		</div>
+		<div style="display:flex;flex-direction: column;">
+			<div class="row">
+				<div class="xwd-3 xwt-3 mobile-off"></div>
+				<div class="xwd-6 xwt-6">
+					<p align="center" class="darktext" style="margin:0; padding: 0px; font-size: 18px"><b>|msg_p_enter_code_01_will_receive_sms||msg_p_enter_code_02_please_store_number|</b>
+					</p>
+				</div>
+				<div class="xwd-3 xwt-3 mobile-off"></div>
+			</div>
+			<div class="row">
+				<div class="xwd-3 xwt-3 mobile-off"></div>
+				<div class="xwd-6 xwt-6">
+					<input type="text" id="customer_number_input" placeholder="|msg_general_01_enter_number|" maxlength="7" minlength="4"
+					class="|input_class|" style="margin:0 auto; display:block " autocomplete="off" required autofocus onclick="noAlert(customer_number_input)">
+					<form name="customer_number" action="cmd" id="customer_number" style="margin:0 auto;" onsubmit="" method="post">
+					</div>
+					<div class="xwd-1 xwt-1 mobile-off"></div>
+				</div>
+				<div style="margin-left:30px; margin-right:30px;">
+					<input type="hidden" name="_verify_customer_number" id="copy_value" value="">
+					<input type="hidden" name="_verify_success_url" id="verify_success" value="sys_dp_act_check.html" >
+					<input type="hidden" name="_save_SMS_CODE_validation" id="was_sms_entered" value="yes" >
+					<input type="hidden" name="_verify_fail_url" id="verify_failed" value="index2.html">
+				</form>
+			</div>
+			<div class="xwd-3 xwt-3 mobile-off tablet-off"></div>
+			<div id="order_first">
+				|advert_slideshow_start||msg_general_02_advert_popup_text||advert_slideshow_end|
+				<br>
+			</div>
+			<div class="row">
+				<div id="send_button" class="xwd-12 xwt-12">
+					<p  align="center"
+					class="button" style="margin:0 auto; display:block" onclick="alphanumeric(customer_number_input)">|msg_general_03_send|</p>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+	</div>
+	|footer|
+	<script>
+	var help_with_code = "|show_activation_code|";
+	if (help_with_code == "yes") {
+	setInterval(function(){
+		$("#modal_code_content").hide();
+		$("#modal_code").slideDown(5,function(){
+			$("#modal_code_content").fadeIn(3000);
+		});
+		$("#was_sms_entered").val("no");
+		setTimeout(function(){
+		$("#modal_code_content").fadeOut(3000,function(){
+			$("#modal_code").slideUp(5);});
+			$("#modal_code_content").show();
+		},10000);
+
+	},45000); }
+	function noAlert() {
+		document.getElementById("customer_number_input").className = "|input_class|";
+		document.getElementById("send_button").type = "submit";
+		document.getElementById("customer_number_input").placeholder = "|msg_general_01_enter_number|";
+	}
+	function alphanumeric(inputtxt)
+	{
+		var letters = /^[0-9a-zA-Z]+$/;
+		var uppercase;
+		if(inputtxt.value.match(letters))
+		{
+			uppercase = document.getElementById("customer_number_input").value.toUpperCase();
+			document.getElementById("customer_number_input").value = uppercase;
+			document.getElementById("copy_value").value = document.getElementById("customer_number_input").value;
+			document.getElementById("customer_number").submit();
+		}
+		else
+		{
+			document.getElementById("customer_number_input").value = "";
+			document.getElementById("customer_number_input").placeholder = "|msg_general_04_only_numbers_letters|";
+			document.getElementById("customer_number_input").className = "alert";
+		}
+	}
+	|advert_javascript_insert|
+</script>
+|move_slides|
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|provider| - |msg_index2_01_hotspot_is| |_CHECK_ONLINE_|</title>
+	|meta_data|
+	<link rel="stylesheet" href="|cssfile|">
+	|char_set|
+</head>
+<body onload="checkNumberOfDP()">
+	<div class="x-content">
+		<div class="row">
+			<div class="xwd-3 xwt-3 ">
+				<p align="center" style="margin:-10px 0px -13px 0px; padding: 0px 0px 0px 0px; font-size: 10px">
+					<a href="index2.html" class="no-url-link light" style="margin:0 auto; display:block"><- |msg_general_07_go_back|
+					</a>
+				</p>
+			</div>
+			<div class="xwd-6 xwt-6">
+				<div id="show_logo" style="margin:-15px; padding: 0px 0px 0px 0px;" >
+					|logo|
+				</div>
+			</div>
+			<div class="xwd-3 xwt-3" style="margin:0px 0px 0px 0px; padding: 10px 0px 2px 0px;font-size: 10px;">
+			</div>
+		</div>
+		<div style="display:flex;flex-direction: column;">
+			<div class="row">
+				<div class="xwd-3 xwt-3 mobile-off"></div>
+				<div class="xwd-6 xwt-6">
+					<p align="center" class="darktext"style="margin:0; padding: 0px;  font-size: 22px"><b>|msg_p_act_succ_01_daypass_activation_success|</b>
+					</p>
+					<p align="center" class="darktext" style="margin:0; padding: 0px; font-size: 15px"><b><span id="dp_number_message">|msg_p_act_succ_02_you_have| |_SESSION_DP_Pool| |msg_p_act_succ_03_more_daypasses_left|</span></b>
+					</p>
+				</div>
+				<div class="xwd-3 xwt-3 mobile-off"></div>
+			</div>
+			<div class="row">
+				<div class="xwd-3 xwt-3 mobile-off"></div>
+				<div class="xwd-6 xwt-6">
+					<div id="show_add_daypass" style="display:|show_add_daypass|;">
+						<form name="temp_form" action="cmd" id="temp_form" method="post">
+							<input type="hidden" name="_cmd_next_page_" id="_next-page_" value="p_dp_add.html">
+							<button  class="button" type="submit" style="margin:0 auto; text-align:center; width:250px; display:block">|msg_general_06_buy_new_daypass|
+							</form>
+						</div>
+					</div>
+					<div class="xwd-3 xwt-3 mobile-off tablet-off"></div>
+				</div>
+				<br>
+				<div class="row" id="order_first">
+					|advert_slideshow_start||msg_general_02_advert_popup_text||advert_slideshow_end|
+				</div>
+			</div>
+			<div class="xwd-12 xwt-12">
+				<form name="ID_GOONLINE" action="cmd" id="ID_GOONLINE" method="post">
+					<input type="hidden" name="_cmd_spend_daypass" id="_daypass-time_ " value="yes">
+					<input type="hidden" name="_cmd_next_page_" id="_next-page_" value="sys_dp_open.html" >
+					<button  id="go-online-button" class="button" type="submit" style="margin:0 auto; text-align:center; width:250px; display:block">|msg_p_act_succ_04_activate_daypass|
+					</button>
+				</form>
+			</div>
+			<br><br><br>
+			<br>
+		</div>
+		|footer|
+		<script>
+		function checkNumberOfDP() {
+			var daypass_count = Number("|_SESSION_DP_Pool|");
+			if (daypass_count < 0) {
+				document.getElementById("show_add_daypass").style.display = "none";
+				document.getElementById("dp_number_message").innerHTML = "";
+
+			}
+		}
+		</script>
+		|move_slides|
+	</body>
+	</html>

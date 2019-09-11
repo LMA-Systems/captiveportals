@@ -1,0 +1,22 @@
+<html>
+<body>
+	<form name="daypass_open_form" action="cmd" id="daypass_open_form" method="post">
+		<input type="hidden" name="_cmd_next_page_" id="_next-page_" value="|landing_page|" >
+	</form>
+	<script>
+var wallet = "|_WALLET_|";
+var i;
+    if (wallet == "") {
+	window.open("|landing_page|","_self");
+//	document.getElementById("daypass_open_form").submit();
+		} else {
+			var pages = wallet.split(";")
+for (i = 0; i <pages.length; i++) {
+	if (pages[i]!= "") {window.open(pages[i],"_blank"); }
+		}
+		window.open("|landing_page|","_self");
+		//document.getElementById("daypass_open_form").submit();
+	}
+</script>
+</body>
+</html>

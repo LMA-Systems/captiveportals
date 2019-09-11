@@ -1,0 +1,24 @@
+<html>
+<body>
+	<form name="temp_form" action="cmd" id="temp_form" method="post">
+		<input type="hidden" name="" id="_verify-page_" value="yes" >
+		<input type="hidden" name="_cmd_next_page_" id="_next-page_" value="" >
+		</form>
+<script>
+getAuthNumber();
+function getAuthNumber() {
+	var authNumber = "|_SESSION_TX_ID|";
+	if (authNumber  == "") {
+		document.getElementById("_verify-page_").name = "_verify_auth_code_";
+		document.getElementById("_next-page_").value = "p_payment.html";
+		document.getElementById("temp_form").submit();
+
+	} else {
+
+		document.getElementById("_next-page_").value = "p_act_fail.html";
+		document.getElementById("temp_form").submit();
+	}
+}
+</script>
+</body>
+</html>

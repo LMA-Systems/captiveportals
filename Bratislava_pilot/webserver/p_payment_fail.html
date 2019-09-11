@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|provider| - |msg_index2_01_hotspot_is| |_CHECK_ONLINE_|</title>
+	|meta_data|
+	<link rel="stylesheet" href="|cssfile|">
+	|char_set|
+</head>
+<body>
+	<div class="x-content">
+		<div class="row">
+			<div class="xwd-3 xwt-3 ">
+				<p align="center" style="margin:-10px 0px -13px 0px; padding: 0px 0px 0px 0px; font-size: 10px">
+					<a href="index2.html" class="no-url-link light" style="margin:0 auto; display:block"><- |msg_general_07_go_back|
+					</a>
+				</p>
+			</div>
+			<div class="xwd-6 xwt-6">
+				<div id="show_logo" style="margin:-15px; padding: 0px 0px 0px 0px;" >
+					|logo|
+				</div>
+			</div>
+			<div class="xwd-3 xwt-3" style="margin:0px 0px 0px 0px; padding: 10px 0px 2px 0px;font-size: 10px;">
+			</div>
+		</div>
+		<div style="display:flex;flex-direction: column;">
+			<div class="row">
+				<div class="xwd-3 xwt-3 mobile-off"></div>
+				<div class="xwd-6 xwt-6">
+					<p align="center" class="darktext" style="margin:0; padding: 0px;  font-size: 22px"><b>|msg_p_payment_fail_01_payment_failed|</b>
+					</p>
+					<p align="center" class="darktext"  style="margin:0; padding: 0px;  font-size: 15px"><b>|msg_general_08_contact_support|
+					</b>
+				</p>
+				<p align="center" class="darktext" style="margin:0; padding: 0px;  font-size: 15px"><b>|msg_general_09_will_be_redirected| <span id="rd" >10 |msg_general_11_seconds|.</span ></b>
+				</p>
+			</div>
+			<div class="xwd-3 xwt-3 mobile-off"></div>
+		</div>
+		<div id="order_first">
+			<br>
+			|advert_slideshow_start||msg_general_02_advert_popup_text||advert_slideshow_end|
+			<br>
+		</div>
+	</div>
+	<form name="creditcard_check_form" action="cmd" id="creditcard_check_form" method="post">
+		<input type="hidden" name="_cmd_next_page_" id="_next-page_" value="index2.html" >
+	</form>
+	<br><br>
+</div>
+<br><br><br><br><br>
+
+|footer|
+<script>
+function timedText() {
+	setTimeout(function(){ document.getElementById("rd").innerHTML = "9 |msg_general_11_seconds|." }, 1000);
+	setTimeout(function(){ document.getElementById("rd").innerHTML = "8 |msg_general_11_seconds|." }, 2000);
+	setTimeout(function(){ document.getElementById("rd").innerHTML = "7 |msg_general_11_seconds|." }, 3000);
+	setTimeout(function(){ document.getElementById("rd").innerHTML = "6 |msg_general_11_seconds|." }, 4000);
+	setTimeout(function(){ document.getElementById("rd").innerHTML = "5 |msg_general_11_seconds|." }, 5000);
+	setTimeout(function(){ document.getElementById("rd").innerHTML = "4 |msg_general_11_seconds|." }, 6000);
+	setTimeout(function(){ document.getElementById("rd").innerHTML = "3 |msg_general_11_seconds|." }, 7000);
+	setTimeout(function(){ document.getElementById("rd").innerHTML = "2 |msg_general_11_seconds|." }, 8000);
+	setTimeout(function(){ document.getElementById("rd").innerHTML = "1 |msg_general_10_second|." }, 9000);
+	setTimeout(function(){document.getElementById("creditcard_check_form").submit() }, 10100);
+}
+timedText();
+</script>
+|move_slides|
+</body>
+</html>

@@ -1,0 +1,361 @@
+{"en": {
+
+"meta_data":"<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta name='format-detection' content='telephone=no'>
+<meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+<meta http-equiv='Pragma' content='no-cache' />
+<meta http-equiv='Expires' content='0' />
+<script>
+history.pushState(null, null, location.href);
+window.onpopstate = function () {
+history.go(1);};
+</script>",
+"jquery":"<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<script src='jquery/jquery-3.3.1.min.js.query'></script>
+<link rel='stylesheet' type='text/css' href='css/dd.css' />
+<script src='jquery/jquery.dd.min.js.query'></script>
+<link rel='stylesheet' type='text/css' href='css/flags.css' />",
+"countries":"<option value='+213' data-image='images/blank.gif' data-imagecss='flag dz' data-title='DZ'>Algeria (+213)</option>
+<option value='+376' data-image='images/blank.gif' data-imagecss='flag ad' data-title='AD'>Andorra (+376)</option>
+<option value='+244' data-image='images/blank.gif' data-imagecss='flag ao' data-title='AO'>Angola (+244)</option>
+<option value='+1264' data-image='images/blank.gif' data-imagecss='flag ai' data-title='AI'>Anguilla (+1264)</option>
+<option value='+93' data-image='images/blank.gif' data-imagecss='flag af' data-title='AF'>Afghanistan (+93)</option>
+<option value='+1268' data-image='images/blank.gif' data-imagecss='flag ag' data-title='AG'>Antigua/Barbuda (+1268)</option>
+<option value='+54' data-image='images/blank.gif' data-imagecss='flag ar' data-title='AR'>Argentina (+54)</option>
+<option value='+355' data-image='images/blank.gif' data-imagecss='flag al' data-title='AL'>Albania (+355)</option>
+<option value='+374' data-image='images/blank.gif' data-imagecss='flag am' data-title='AM'>Armenia (+374)</option>
+<option value='+672' data-image='images/blank.gif' data-imagecss='flag aq' data-title='AQ'>Antarctica (+672)</option>
+<option value='+1' data-image='images/blank.gif' data-imagecss='flag as' data-title='AS'>American Samoa (+1)</option>
+<option value='+297' data-image='images/blank.gif' data-imagecss='flag aw' data-title='AW'>Aruba (+297)</option>
+<option value='+61' data-image='images/blank.gif' data-imagecss='flag au' data-title='AU'>Australia (+61)</option>
+<option value='+43' data-image='images/blank.gif' data-imagecss='flag at' data-title='AT' selected='selected'>Austria (+43)</option>
+<option value='+358' data-image='images/blank.gif' data-imagecss='flag ax' data-title='AX'>Aland Islands (+358)</option>
+<option value='+994' data-image='images/blank.gif' data-imagecss='flag az' data-title='AZ'>Azerbaijan (+994)</option>
+<option value='+1242' data-image='images/blank.gif' data-imagecss='flag bs' data-title='BS'>Bahamas (+1242)</option>
+<option value='+973' data-image='images/blank.gif' data-imagecss='flag bh' data-title='BH'>Bahrain (+973)</option>
+<option value='+880' data-image='images/blank.gif' data-imagecss='flag bd' data-title='BD'>Bangladesh (+880)</option>
+<option value='+1246' data-image='images/blank.gif' data-imagecss='flag bb' data-title='BB'>Barbados (+1246)</option>
+<option value='+375' data-image='images/blank.gif' data-imagecss='flag by' data-title='BY'>Belarus (+375)</option>
+<option value='+32' data-image='images/blank.gif' data-imagecss='flag be' data-title='BE'>Belgium (+32)</option>
+<option value='+501' data-image='images/blank.gif' data-imagecss='flag bz' data-title='BZ'>Belize (+501)</option>
+<option value='+229' data-image='images/blank.gif' data-imagecss='flag bj' data-title='BJ'>Benin (+229)</option>
+<option value='+1441' data-image='images/blank.gif' data-imagecss='flag bm' data-title='BM'>Bermuda (+1441)</option>
+<option value='+975' data-image='images/blank.gif' data-imagecss='flag bt' data-title='BT'>Bhutan (+975)</option>
+<option value='+591' data-image='images/blank.gif' data-imagecss='flag bo' data-title='BO'>Bolivia (+591)</option>
+<option value='+387' data-image='images/blank.gif' data-imagecss='flag ba' data-title='BA'>Bosnia/Herz. (+387)</option>
+<option value='+267' data-image='images/blank.gif' data-imagecss='flag bw' data-title='BW'>Botswana (+267)</option>
+<option value='+55' data-image='images/blank.gif' data-imagecss='flag br' data-title='BR'>Brazil (+55)</option>
+<option value='+673' data-image='images/blank.gif' data-imagecss='flag bn' data-title='BN'>Brunei (+673)</option>
+<option value='+359' data-image='images/blank.gif' data-imagecss='flag bg' data-title='BG'>Bulgaria (+359)</option>
+<option value='+226' data-image='images/blank.gif' data-imagecss='flag bf' data-title='BF'>Burkina Faso (+226)</option>
+<option value='+257' data-image='images/blank.gif' data-imagecss='flag bi' data-title='BI'>Burundi (+257)</option>
+<option value='+855' data-image='images/blank.gif' data-imagecss='flag kh' data-title='KH'>Cambodia (+855)</option>
+<option value='+237' data-image='images/blank.gif' data-imagecss='flag cm' data-title='CM'>Cameroon (+237)</option>
+<option value='+1' data-image='images/blank.gif' data-imagecss='flag ca' data-title='CA'>Canada (+1)</option>
+<option value='+238' data-image='images/blank.gif' data-imagecss='flag cv' data-title='CV'>Cape Verde (+238)</option>
+<option value='+1345' data-image='images/blank.gif' data-imagecss='flag ky' data-title='KY'>Cayman Islands (+1345)</option>
+<option value='+236' data-image='images/blank.gif' data-imagecss='flag cf' data-title='CF'>Cent. Afr. Rep. (+236)</option>
+<option value='+56' data-image='images/blank.gif' data-imagecss='flag cl' data-title='CL'>Chile (+56)</option>
+<option value='+86' data-image='images/blank.gif' data-imagecss='flag cn' data-title='CN'>China (+86)</option>
+<option value='+57' data-image='images/blank.gif' data-imagecss='flag co' data-title='CO'>Colombia (+57)</option>
+<option value='+269' data-image='images/blank.gif' data-imagecss='flag km' data-title='KM'>Comoros (+269)</option>
+<option value='+242' data-image='images/blank.gif' data-imagecss='flag cg' data-title='CG'>Congo (+242)</option>
+<option value='+682' data-image='images/blank.gif' data-imagecss='flag ck' data-title='CK'>Cook Islands (+682)</option>
+<option value='+506' data-image='images/blank.gif' data-imagecss='flag cr' data-title='CR'>Costa Rica (+506)</option>
+<option value='+225' data-image='images/blank.gif' data-imagecss='flag ci' data-title='CI'>Cote D'Ivoire (+225)</option>
+<option value='+385' data-image='images/blank.gif' data-imagecss='flag hr' data-title='HR'>Croatia (+385)</option>
+<option value='+53' data-image='images/blank.gif' data-imagecss='flag cu' data-title='CU'>Cuba (+53)</option>
+<option value='+357' data-image='images/blank.gif' data-imagecss='flag cy' data-title='CY'>Cyprus (+357)</option>
+<option value='+61' data-image='images/blank.gif' data-imagecss='flag cx' data-title='CX'>Christmas Island (+61)</option>
+<option value='+420' data-image='images/blank.gif' data-imagecss='flag cz' data-title='CZ'>Czech Republic (+420)</option>
+<option value='+243' data-image='images/blank.gif' data-imagecss='flag cd' data-title='CD'>Congo (+243)</option>
+<option value='+45' data-image='images/blank.gif' data-imagecss='flag dk' data-title='DK'>Denmark (+45)</option>
+<option value='+253' data-image='images/blank.gif' data-imagecss='flag dj' data-title='DJ'>Djibouti (+253)</option>
+<option value='+1809' data-image='images/blank.gif' data-imagecss='flag dm' data-title='DM'>Dominica (+1809)</option>
+<option value='+1809' data-image='images/blank.gif' data-imagecss='flag do' data-title='DO'>Dominican Rep. (+1809)</option>
+<option value='+593' data-image='images/blank.gif' data-imagecss='flag ec' data-title='EC'>Ecuador (+593)</option>
+<option value='+20' data-image='images/blank.gif' data-imagecss='flag eg' data-title='EG'>Egypt (+20)</option>
+<option value='+503' data-image='images/blank.gif' data-imagecss='flag sv' data-title='SV'>El Salvador (+503)</option>
+<option value='+240' data-image='images/blank.gif' data-imagecss='flag gq' data-title='GQ'>Equatorial Guinea (+240)</option>
+<option value='+291' data-image='images/blank.gif' data-imagecss='flag er' data-title='ER'>Eritrea (+291)</option>
+<option value='+372' data-image='images/blank.gif' data-imagecss='flag ee' data-title='EE'>Estonia (+372)</option>
+<option value='+251' data-image='images/blank.gif' data-imagecss='flag et' data-title='ET'>Ethiopia (+251)</option>
+<option value='+500' data-image='images/blank.gif' data-imagecss='flag fk' data-title='FK'>Falkland Islands (+500)</option>
+<option value='+298' data-image='images/blank.gif' data-imagecss='flag fo' data-title='FO'>Faroe Islands (+298)</option>
+<option value='+679' data-image='images/blank.gif' data-imagecss='flag fj' data-title='FJ'>Fiji (+679)</option>
+<option value='+358' data-image='images/blank.gif' data-imagecss='flag fi' data-title='FI'>Finland (+358)</option>
+<option value='+691' data-image='images/blank.gif' data-imagecss='flag fm' data-title='FM'>Micronesia (+691)</option>
+<option value='+33' data-image='images/blank.gif' data-imagecss='flag fr' data-title='FR'>France (+33)</option>
+<option value='+594' data-image='images/blank.gif' data-imagecss='flag gf' data-title='GF'>French Guiana (+594)</option>
+<option value='+689' data-image='images/blank.gif' data-imagecss='flag pf' data-title='PF'>French Polynesia (+689)</option>
+<option value='+241' data-image='images/blank.gif' data-imagecss='flag ga' data-title='GA'>Gabon (+241)</option>
+<option value='+220' data-image='images/blank.gif' data-imagecss='flag gm' data-title='GM'>Gambia (+220)</option>
+<option value='+7880' data-image='images/blank.gif' data-imagecss='flag ge' data-title='GE'>Georgia (+7880)</option>
+<option value='+49' data-image='images/blank.gif' data-imagecss='flag de' data-title='DE'>Germany (+49)</option>
+<option value='+233' data-image='images/blank.gif' data-imagecss='flag gh' data-title='GH'>Ghana (+233)</option>
+<option value='+350' data-image='images/blank.gif' data-imagecss='flag gi' data-title='GI'>Gibraltar (+350)</option>
+<option value='+30' data-image='images/blank.gif' data-imagecss='flag gr' data-title='GR'>Greece (+30)</option>
+<option value='+44' data-image='images/blank.gif' data-imagecss='flag gb' data-title='GB'>Great Britain (UK) (+44)</option>
+<option value='+299' data-image='images/blank.gif' data-imagecss='flag gl' data-title='GL'>Greenland (+299)</option>
+<option value='+1473' data-image='images/blank.gif' data-imagecss='flag gd' data-title='GD'>Grenada (+1473)</option>
+<option value='+590' data-image='images/blank.gif' data-imagecss='flag gp' data-title='GP'>Guadeloupe (+590)</option>
+<option value='+671' data-image='images/blank.gif' data-imagecss='flag gu' data-title='GU'>Guam (+671)</option>
+<option value='+502' data-image='images/blank.gif' data-imagecss='flag gt' data-title='GT'>Guatemala (+502)</option>
+<option value='+224' data-image='images/blank.gif' data-imagecss='flag gn' data-title='GN'>Guinea (+224)</option>
+<option value='+245' data-image='images/blank.gif' data-imagecss='flag gw' data-title='GW'>Guinea-Bissau (+245)</option>
+<option value='+592' data-image='images/blank.gif' data-imagecss='flag gy' data-title='GY'>Guyana (+592)</option>
+<option value='+509' data-image='images/blank.gif' data-imagecss='flag ht' data-title='HT'>Haiti (+509)</option>
+<option value='+504' data-image='images/blank.gif' data-imagecss='flag hn' data-title='HN'>Honduras (+504)</option>
+<option value='+852' data-image='images/blank.gif' data-imagecss='flag hk' data-title='HK'>Hong Kong (+852)</option>
+<option value='+36' data-image='images/blank.gif' data-imagecss='flag hu' data-title='HU'>Hungary (+36)</option>
+<option value='+354' data-image='images/blank.gif' data-imagecss='flag is' data-title='IS'>Iceland (+354)</option>
+<option value='+91' data-image='images/blank.gif' data-imagecss='flag in' data-title='IN'>India (+91)</option>
+<option value='+62' data-image='images/blank.gif' data-imagecss='flag id' data-title='ID'>Indonesia (+62)</option>
+<option value='+98' data-image='images/blank.gif' data-imagecss='flag ir' data-title='IR'>Iran (+98)</option>
+<option value='+964' data-image='images/blank.gif' data-imagecss='flag iq' data-title='IQ'>Iraq (+964)</option>
+<option value='+353' data-image='images/blank.gif' data-imagecss='flag ie' data-title='IE'>Ireland (+353)</option>
+<option value='+972' data-image='images/blank.gif' data-imagecss='flag il' data-title='IL'>Israel (+972)</option>
+<option value='+39' data-image='images/blank.gif' data-imagecss='flag it' data-title='IT'>Italy (+39)</option>
+<option value='+1876' data-image='images/blank.gif' data-imagecss='flag jm' data-title='JM'>Jamaica (+1876)</option>
+<option value='+81' data-image='images/blank.gif' data-imagecss='flag jp' data-title='JP'>Japan (+81)</option>
+<option value='+962' data-image='images/blank.gif' data-imagecss='flag jo' data-title='JO'>Jordan (+962)</option>
+<option value='+7' data-image='images/blank.gif' data-imagecss='flag kz' data-title='KZ'>Kazakhstan (+7)</option>
+<option value='+254' data-image='images/blank.gif' data-imagecss='flag ke' data-title='KE'>Kenya (+254)</option>
+<option value='+686' data-image='images/blank.gif' data-imagecss='flag ki' data-title='KI'>Kiribati (+686)</option>
+<option value='+850' data-image='images/blank.gif' data-imagecss='flag kp' data-title='KP'>Korea (North) (+850)</option>
+<option value='+82' data-image='images/blank.gif' data-imagecss='flag kr' data-title='KR'>Korea (South) (+82)</option>
+<option value='+996' data-image='images/blank.gif' data-imagecss='flag kg' data-title='KG'>Kyrgyzstan (+996)</option>
+<option value='+965' data-image='images/blank.gif' data-imagecss='flag kw' data-title='KW'>Kuwait (+965)</option>
+<option value='+856' data-image='images/blank.gif' data-imagecss='flag la' data-title='LA'>Laos (+856)</option>
+<option value='+371' data-image='images/blank.gif' data-imagecss='flag lv' data-title='LV'>Latvia (+371)</option>
+<option value='+961' data-image='images/blank.gif' data-imagecss='flag lb' data-title='LB'>Lebanon (+961)</option>
+<option value='+266' data-image='images/blank.gif' data-imagecss='flag ls' data-title='LS'>Lesotho (+266)</option>
+<option value='+231' data-image='images/blank.gif' data-imagecss='flag lr' data-title='LR'>Liberia (+231)</option>
+<option value='+218' data-image='images/blank.gif' data-imagecss='flag ly' data-title='LY'>Libya (+218)</option>
+<option value='+417' data-image='images/blank.gif' data-imagecss='flag li' data-title='LI'>Liechtenstein (+417)</option>
+<option value='+370' data-image='images/blank.gif' data-imagecss='flag lt' data-title='LT'>Lithuania (+370)</option>
+<option value='+352' data-image='images/blank.gif' data-imagecss='flag lu' data-title='LU'>Luxembourg (+352)</option>
+<option value='+853' data-image='images/blank.gif' data-imagecss='flag mo' data-title='MO'>Macao (+853)</option>
+<option value='+389' data-image='images/blank.gif' data-imagecss='flag mk' data-title='MK'>Macedonia (+389)</option>
+<option value='+261' data-image='images/blank.gif' data-imagecss='flag mg' data-title='MG'>Madagascar (+261)</option>
+<option value='+265' data-image='images/blank.gif' data-imagecss='flag mw' data-title='MW'>Malawi (+265)</option>
+<option value='+60' data-image='images/blank.gif' data-imagecss='flag my' data-title='MY'>Malaysia (+60)</option>
+<option value='+960' data-image='images/blank.gif' data-imagecss='flag mv' data-title='MV'>Maldives (+960)</option>
+<option value='+223' data-image='images/blank.gif' data-imagecss='flag ml' data-title='ML'>Mali (+223)</option>
+<option value='+356' data-image='images/blank.gif' data-imagecss='flag mt' data-title='MT'>Malta (+356)</option>
+<option value='+692' data-image='images/blank.gif' data-imagecss='flag mh' data-title='MH'>Marshall Islands (+692)</option>
+<option value='+596' data-image='images/blank.gif' data-imagecss='flag mq' data-title='MQ'>Martinique (+596)</option>
+<option value='+222' data-image='images/blank.gif' data-imagecss='flag mr' data-title='MR'>Mauritania (+222)</option>
+<option value='+269' data-image='images/blank.gif' data-imagecss='flag yt' data-title='YT'>Mayotte (+269)</option>
+<option value='+52' data-image='images/blank.gif' data-imagecss='flag mx' data-title='MX'>Mexico (+52)</option>
+<option value='+373' data-image='images/blank.gif' data-imagecss='flag md' data-title='MD'>Moldova (+373)</option>
+<option value='+377' data-image='images/blank.gif' data-imagecss='flag mc' data-title='MC'>Monaco (+377)</option>
+<option value='+976' data-image='images/blank.gif' data-imagecss='flag mn' data-title='MN'>Mongolia (+976)</option>
+<option value='+1664' data-image='images/blank.gif' data-imagecss='flag ms' data-title='MS'>Montserrat (+1664)</option>
+<option value='+212' data-image='images/blank.gif' data-imagecss='flag ma' data-title='MA'>Morocco (+212)</option>
+<option value='+258' data-image='images/blank.gif' data-imagecss='flag mz' data-title='MZ'>Mozambique (+258)</option>
+<option value='+95' data-image='images/blank.gif' data-imagecss='flag mm' data-title='MM'>Myanmar (+95)</option>
+<option value='+230' data-image='images/blank.gif' data-imagecss='flag mu' data-title='MU'>Mauritius (+230)</option>
+<option value='+264' data-image='images/blank.gif' data-imagecss='flag na' data-title='NA'>Namibia (+264)</option>
+<option value='+674' data-image='images/blank.gif' data-imagecss='flag nr' data-title='NR'>Nauru (+674)</option>
+<option value='+977' data-image='images/blank.gif' data-imagecss='flag np' data-title='NP'>Nepal (+977)</option>
+<option value='+31' data-image='images/blank.gif' data-imagecss='flag nl' data-title='NL'>Netherlands (+31)</option>
+<option value='+687' data-image='images/blank.gif' data-imagecss='flag nc' data-title='NC'>New Caledonia (+687)</option>
+<option value='+64' data-image='images/blank.gif' data-imagecss='flag nz' data-title='NZ'>New Zealand (+64)</option>
+<option value='+505' data-image='images/blank.gif' data-imagecss='flag ni' data-title='NI'>Nicaragua (+505)</option>
+<option value='+227' data-image='images/blank.gif' data-imagecss='flag ne' data-title='NE'>Niger (+227)</option>
+<option value='+234' data-image='images/blank.gif' data-imagecss='flag ng' data-title='NG'>Nigeria (+234)</option>
+<option value='+683' data-image='images/blank.gif' data-imagecss='flag nu' data-title='NU'>Niue (+683)</option>
+<option value='+672' data-image='images/blank.gif' data-imagecss='flag nf' data-title='NF'>Norfolk Island (+672)</option>
+<option value='+47' data-image='images/blank.gif' data-imagecss='flag no' data-title='NO'>Norway (+47)</option>
+<option value='+968' data-image='images/blank.gif' data-imagecss='flag om' data-title='OM'>Oman (+968)</option>
+<option value='+680' data-image='images/blank.gif' data-imagecss='flag pw' data-title='PW'>Palau (+680)</option>
+<option value='+507' data-image='images/blank.gif' data-imagecss='flag pa' data-title='PA'>Panama (+507)</option>
+<option value='+675' data-image='images/blank.gif' data-imagecss='flag pg' data-title='PG'>Papua N. Guinea (+675)</option>
+<option value='+595' data-image='images/blank.gif' data-imagecss='flag py' data-title='PY'>Paraguay (+595)</option>
+<option value='+51' data-image='images/blank.gif' data-imagecss='flag pe' data-title='PE'>Peru (+51)</option>
+<option value='+63' data-image='images/blank.gif' data-imagecss='flag ph' data-title='PH'>Philippines (+63)</option>
+<option value='+48' data-image='images/blank.gif' data-imagecss='flag pl' data-title='PL'>Poland (+48)</option>
+<option value='+351' data-image='images/blank.gif' data-imagecss='flag pt' data-title='PT'>Portugal (+351)</option>
+<option value='+1787' data-image='images/blank.gif' data-imagecss='flag pr' data-title='PR'>Puerto Rico (+1787)</option>
+<option value='+92' data-image='images/blank.gif' data-imagecss='flag pk' data-title='PK'>Pakistan (+92)</option>
+<option value='+970' data-image='images/blank.gif' data-imagecss='flag ps' data-title='PS'>Palestinian (+970)</option>
+<option value='+974' data-image='images/blank.gif' data-imagecss='flag qa' data-title='QA'>Qatar (+974)</option>
+<option value='+262' data-image='images/blank.gif' data-imagecss='flag re' data-title='RE'>Reunion (+262)</option>
+<option value='+40' data-image='images/blank.gif' data-imagecss='flag ro' data-title='RO'>Romania (+40)</option>
+<option value='+7' data-image='images/blank.gif' data-imagecss='flag ru' data-title='RU'>Russian Federation (+7)</option>
+<option value='+250' data-image='images/blank.gif' data-imagecss='flag rw' data-title='RW'>Rwanda (+250)</option>
+<option value='+290' data-image='images/blank.gif' data-imagecss='flag sh' data-title='SH'>Saint Helena (+290)</option>
+<option value='+1869' data-image='images/blank.gif' data-imagecss='flag kn' data-title='KN'>St. Kitts (+1869)</option>
+<option value='+1' data-image='images/blank.gif' data-imagecss='flag lc' data-title='LC'>Saint Lucia (+1)</option>
+<option value='+378' data-image='images/blank.gif' data-imagecss='flag sm' data-title='SM'>San Marino (+378)</option>
+<option value='+239' data-image='images/blank.gif' data-imagecss='flag st' data-title='ST'>Sao Tome/Principe (+239)</option>
+<option value='+966' data-image='images/blank.gif' data-imagecss='flag sa' data-title='SA'>Saudi Arabia (+966)</option>
+<option value='+221' data-image='images/blank.gif' data-imagecss='flag sn' data-title='SN'>Senegal (+221)</option>
+<option value='+381' data-image='images/blank.gif' data-imagecss='flag cs' data-title='CS'>Serbia/Montenegro (+381)</option>
+<option value='+248' data-image='images/blank.gif' data-imagecss='flag sc' data-title='SC'>Seychelles (+248)</option>
+<option value='+232' data-image='images/blank.gif' data-imagecss='flag sl' data-title='SL'>Sierra Leone (+232)</option>
+<option value='+65' data-image='images/blank.gif' data-imagecss='flag sg' data-title='SG'>Singapore (+65)</option>
+<option value='+421' data-image='images/blank.gif' data-imagecss='flag sk' data-title='SK'>Slovakia (+421)</option>
+<option value='+386' data-image='images/blank.gif' data-imagecss='flag si' data-title='SI'>Slovenia (+386)</option>
+<option value='+677' data-image='images/blank.gif' data-imagecss='flag sb' data-title='SB'>Solomon Islands (+677)</option>
+<option value='+252' data-image='images/blank.gif' data-imagecss='flag so' data-title='SO'>Somalia (+252)</option>
+<option value='+27' data-image='images/blank.gif' data-imagecss='flag za' data-title='ZA'>South Africa (+27)</option>
+<option value='+34' data-image='images/blank.gif' data-imagecss='flag es' data-title='ES'>Spain (+34)</option>
+<option value='+94' data-image='images/blank.gif' data-imagecss='flag lk' data-title='LK'>Sri Lanka (+94)</option>
+<option value='+249' data-image='images/blank.gif' data-imagecss='flag sd' data-title='SD'>Sudan (+249)</option>
+<option value='+597' data-image='images/blank.gif' data-imagecss='flag sr' data-title='SR'>Suriname (+597)</option>
+<option value='+268' data-image='images/blank.gif' data-imagecss='flag sz' data-title='SZ'>Swaziland (+268)</option>
+<option value='+46' data-image='images/blank.gif' data-imagecss='flag se' data-title='SE'>Sweden (+46)</option>
+<option value='+41' data-image='images/blank.gif' data-imagecss='flag ch' data-title='CH'>Switzerland (+41)</option>
+<option value='+963' data-image='images/blank.gif' data-imagecss='flag sy' data-title='SY'>Syria (+963)</option>
+<option value='+235' data-image='images/blank.gif' data-imagecss='flag td' data-title='TD'>Chad (+235)</option>
+<option value='+886' data-image='images/blank.gif' data-imagecss='flag tw' data-title='TW'>Taiwan (+886)</option>
+<option value='+7' data-image='images/blank.gif' data-imagecss='flag tj' data-title='TJ'>Tajikistan (+7)</option>
+<option value='+66' data-image='images/blank.gif' data-imagecss='flag th' data-title='TH'>Thailand (+66)</option>
+<option value='+228' data-image='images/blank.gif' data-imagecss='flag tg' data-title='TG'>Togo (+228)</option>
+<option value='+676' data-image='images/blank.gif' data-imagecss='flag to' data-title='TO'>Tonga (+676)</option>
+<option value='+1868' data-image='images/blank.gif' data-imagecss='flag tt' data-title='TT'>Trinidad/Tobago (+1868)</option>
+<option value='+216' data-image='images/blank.gif' data-imagecss='flag tn' data-title='TN'>Tunisia (+216)</option>
+<option value='+90' data-image='images/blank.gif' data-imagecss='flag tr' data-title='TR'>Turkey (+90)</option>
+<option value='+993' data-image='images/blank.gif' data-imagecss='flag tm' data-title='TM'>Turkmenistan (+993)</option>
+<option value='+688' data-image='images/blank.gif' data-imagecss='flag tv' data-title='TV'>Tuvalu (+688)</option>
+<option value='+690' data-image='images/blank.gif' data-imagecss='flag tk' data-title='TK'>Tokelau (+690)</option>
+<option value='+255' data-image='images/blank.gif' data-imagecss='flag tz' data-title='TZ'>Tanzania (+255)</option>
+<option value='+380' data-image='images/blank.gif' data-imagecss='flag ua' data-title='UA'>Ukraine (+380)</option>
+<option value='+256' data-image='images/blank.gif' data-imagecss='flag ug' data-title='UG'>Uganda (+256)</option>
+<option value='+971' data-image='images/blank.gif' data-imagecss='flag ae' data-title='AE'>United Arab Emirates(+971)</option>
+<option value='+1' data-image='images/blank.gif' data-imagecss='flag us' data-title='US'>United States (+1)</option>
+<option value='+598' data-image='images/blank.gif' data-imagecss='flag uy' data-title='UY'>Uruguay (+598)</option>
+<option value='+7' data-image='images/blank.gif' data-imagecss='flag uz' data-title='UZ'>Uzbekistan (+7)</option>
+<option value='+379' data-image='images/blank.gif' data-imagecss='flag va' data-title='VA'>Vatican City State (+379)</option>
+<option value='+58' data-image='images/blank.gif' data-imagecss='flag ve' data-title='VE'>Venezuela (+58)</option>
+<option value='+1' data-image='images/blank.gif' data-imagecss='flag vg' data-title='VG'>Virgin Isl. (British) (+1)</option>
+<option value='+1' data-image='images/blank.gif' data-imagecss='flag vi' data-title='VI'>Virgin Isl. (U.S.) (+1)</option>
+<option value='+84' data-image='images/blank.gif' data-imagecss='flag vn' data-title='vn'>Vietnam (+84)</option>
+<option value='+678' data-image='images/blank.gif' data-imagecss='flag vu' data-title='VU'>Vanuatu (+678)</option>
+<option value='+681' data-image='images/blank.gif' data-imagecss='flag wf' data-title='WF'>Wallis and Futuna (+681)</option>
+<option value='+212' data-image='images/blank.gif' data-imagecss='flag eh' data-title='EH'>Western Sahara (+212)</option>
+<option value='+967' data-image='images/blank.gif' data-imagecss='flag ye' data-title='YE'>Yemen (+967)</option>
+<option value='+260' data-image='images/blank.gif' data-imagecss='flag zm' data-title='ZM'>Zambia (+260)</option>
+<option value='+263' data-image='images/blank.gif' data-imagecss='flag zw' data-title='ZW'>Zimbabwe (+263)</option>",
+"language":"
+<option value='index2.html?__lang=en' data-image='images/blank.gif' data-imagecss='flag gb' data-title='GB'>English</option>
+<option value='index2.html?__lang=de' data-image='images/blank.gif' data-imagecss='flag de' data-title='DE'>German</option>
+<option value='index2.html?__lang=jp' data-image='images/blank.gif' data-imagecss='flag jp' data-title='JP'>Japan</option>",
+"language_select_box":"en",
+"selectbox_css":"color:black;background:white; url(../images/title-bg.gif) repeat-x left top;",
+"footer":"
+<div id='modal_footer' class='modal'>
+  <!-- Modal content -->
+  <div class='modal-content'>
+    <p id='footer_content' align='center' style='overflow:scroll;'></p>
+    <div class='xwd-12 xwt-12'>
+      <p class='button' align='center' style='text-align: justify; margin:0 auto; display:block' onclick='close_terms()'><b>Close</b></p>
+    </div>
+  </div>
+</div>
+<div class='footerWrap'  style='font-size: 8px; display:block;'>
+  <div class='footer'>
+    <div class='footerContent'>
+      <p  align='center' style='margin:0px 0px 0px 0px; padding: 1%;  '>
+        <a id = 'id_terms'  class='no-url-link dark' style='margin:2 auto;cursor:pointer;' onclick='showFooter()'><b>Terms</b></a>
+        <a id = '' class='no-url-link dark' style='margin:2 auto;'><b> &nbsp; &nbsp;&#169; SIMGO  &nbsp; &nbsp;</b></a>
+        <a id = ''  class='no-url-link dark' style='margin:2 auto;'><b>info@simgo-mobile.com  </b></a>
+      </p>
+    </div>
+  </div>
+</div>",
+"landing_page":"http://advert.want2be.online",
+"show_activation_code":"yes",
+"sms_1st":"<script>
+  function sms_send_check() {
+  var sms_time = ",
+  "sms_2nd":";
+    if (sms_time >0 && sms_time<120) {
+      window.open('http://want2be.online/p_enter_code.html','_self');
+    }
+  }
+  sms_send_check();
+  </script>",
+"lang_styles":"margin:0 auto; padding:0px;border:1px solid #495356;width:100px;border-radius: 17px; font-size:10px;float:left;",
+"input_styles":" display:block;width:129px;font-size:11px;padding-left:5px;border:none; padding-right: 5px; border-radius:0px 17px 17px 0px; border-left: 1px solid #495356;height:28px; border-bottom:1px solid #495356;box-shadow:none;",
+"select_styles":"margin: auto;padding:0px;padding-top: 1px;width:169px;font-size:10px;float:left; box-shadow:0;",
+"number_div_styles":"margin:0 auto;padding: 0px; height: 29px;width:300px;",
+"logo":"<img src='images/customer_logo.png' width=35% height=35% style='padding-top:15px;'>",
+"char_set":"<meta charset='utf-8'>",
+"advert_slideshow_start":"<br>
+<div class='slideshow-container popup' style='padding:0px;'>
+  <span class='popuptext' id='myPopup'>",
+  "advert_slideshow_end":"</span>
+    <span id='slideshow-container'></span>
+  </div>
+  <br>",
+"rb_hash1":"3V76SDTV45XPM32",
+"rb_hash2":"9KNS5D8JEO9BS7Y",
+"index2_01_logo":"block",
+"free_version":"yes",
+"paid_version":"yes",
+"logo_show":"yes",
+"show_add_daypass":"block",
+"firsname_show":"block",
+"lastname_show":"block",
+"email_show":"block",
+"phonenumber_show":"block",
+"address_show":"block",
+"city_show":"block",
+"postal_show":"block",
+"country_show":"block",
+"data_collect_visibility":"block",
+"terms_condition_checkbox":"block",
+"permission_checkbox":"block",
+"bannerclickinfo_visibility":"none",
+"checkbox_terms_required":"required",
+"checkbox_locations_required":"required",
+
+"input_class":"formselectwhite",
+"hotspot_serial":"S/N: ",
+"advert_images_language":"german",
+"currency":"EUR",
+"currency_char":" &euro;",
+"provider":"FLINK",
+"cssfile":"css/flink.css",
+"get_price":"<script src='p_getprice.js'></script>",
+"pricing_xml":"pricing/pricing_en.xml",
+"move_slides":"<script src='x_moveslides.js'></script>",
+"0-9a-zA-Z":"[0-9a-zA-Z]",
+"fontsize":"14",
+
+ "test3":123},
+
+ "jp": {
+
+"hotspot_serial":"シリアルナンバー： ",
+"currency":"JPY",
+"currency_char":" &yen;",
+"language_select_box":"jp",
+
+
+
+  "test3":123},
+
+  "il": {
+
+    "hotspot_serial":"מספר סידורי: ",
+    "currency":"NIS",
+    "currency_char":" &#8362;",
+
+
+
+     "test3":123
+   },
+
+
+"de": {
+
+  "bannerclickinfo_visibility":"block",
+  "language_select_box":"de",
+
+"test2":"222"
+}
+}

@@ -1,0 +1,65 @@
+{
+    "user_id":2,
+    "device_id":"123",
+    "start_date":"2016-09-21 10:40",
+    "end_date":"2017-01-21 10:40",
+    "plans":[
+        {
+            "data_limit":1000,
+            "use_hsim":false,
+            "start_date":"2016-09-22 10:40",
+            "end_date":"2016-10-23 10:40",
+            "coverage":[
+                {
+                    "country":"SE",
+                    "priority_plan":1
+                },
+                {
+                    "country":"BZ"
+                }
+            ],
+            "throttling":[
+                {
+                    "threshold":20,
+                    "rate":1000
+                },
+                {
+                    "threshold":50,
+                    "rate":600
+                },
+                {
+                    "threshold":100,
+                    "rate":500
+                }
+            ]
+        },
+        {
+            "data_limit":-1,
+            "use_hsim":true,
+            "start_date":"2016-11-22 10:40",
+            "end_date":"2016-12-23 10:40",
+            "coverage":[
+                {
+                    "country":"IS"
+                },
+                {
+                    "country":"ES"
+                }
+            ],
+            "throttling":[
+                {
+                    "threshold":10,
+                    "rate":1000
+                },
+                {
+                    "threshold":40,
+                    "rate":500
+                },
+                {
+                    "threshold":100,
+                    "rate":50
+                }
+            ]
+        }
+    ]
+}

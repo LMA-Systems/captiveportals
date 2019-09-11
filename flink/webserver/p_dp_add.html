@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|provider| - |msg_index2_01_hotspot_is| |_CHECK_ONLINE_|</title>
+	|meta_data|
+	<link rel="stylesheet" href="|cssfile|">
+	|char_set|
+</head>
+<body>
+	<div class="x-content">
+		<div class="row">
+			<div class="xwd-3 xwt-3 ">
+				<p align="center" style="margin:-10px 0px -13px 0px; padding: 0px 0px 0px 0px; font-size: 10px">
+					<a href="index2.html" class="no-url-link light" style="margin:0 auto; display:block"><- |msg_general_07_go_back|
+					</a>
+				</p>
+			</div>
+			<div class="xwd-6 xwt-6">
+				<div id="show_logo" style="margin:-15px; padding: 0px 0px 0px 0px;" >
+					|logo|
+				</div>
+			</div>
+			<div class="xwd-3 xwt-3" style="margin:0px 0px 0px 0px; padding: 10px 0px 2px 0px;font-size: 10px;">
+			</div>
+		</div>
+		<div style="display:flex;flex-direction: column;">
+			<div class="row">
+				<div class="xwd-3 xwt-3 mobile-off"></div>
+				<div class="xwd-6 xwt-6">
+					<p align="center" class="darktext" style="margin:0; padding: 0px; font-size: 20px"><b>|msg_general_19_how_many_daypass_buy|</b>
+					</p>
+					<p align="center" class="darktext" style="margin:0; padding: 0px;  font-size: 15px"><b>|msg_p_dp_add_01_creditcard_associated|</b>
+					</div>
+					<div class="xwd-3 xwt-3 mobile-off"></div>
+				</div>
+				<div class="row">
+					<div class="xwd-3 xwt-3 mobile-off"></div>
+					<div class="xwd-6 xwt-6">
+						<input type="text"  id="customer_number_input" placeholder="min 1 max 30" maxlength="2" minlength="1" onkeyup="calculatePrice();"
+						class="|input_class|" style="margin:0 auto; display:block " autocomplete="off" required  onclick="noAlert()">
+						<form name="_save_daypasses_to_add"  id="how_many_daypasses_to_buy" style="margin:0 auto;" onsubmit="alphanumeric(customer_number_input)" method="post">
+							<input type="hidden" name="AMOUNT" id="customer_number">
+							<input type="hidden" value="|currency|" name="CCY" >
+							<input type="hidden" value="" id="payment_message" name="MSG" >
+							<input type="hidden" name="REF_NO" id="_ref_ID_" value="|_SESSION_TX_ID|" >
+							<input type="hidden" name="PRICE" id="price_payment" value="0" >
+						</form>
+
+					</div>
+					<div class="xwd-3 xwt-3 mobile-off tablet-off"></div>
+					<br>
+					<div class="xwd-12 xwt-12">
+						<p align="center" class="darktext" style="margin:0; padding: 0px; font-size: 20px"><b>|msg_general_22_price_for_daypasses|<span id="price"></span>|currency_char|</b>
+						</p>
+						<p align="center" style="margin:0; padding: 0px;  font-size: 15px"><b></b>
+						</div>
+						<br>
+					</div>
+					<div class="row" id="order_first">
+						|advert_slideshow_start||msg_general_02_advert_popup_text||advert_slideshow_end|
+					</div>
+					<div class="xwd-12 xwt-12">
+						<p id="send_button"  value=""
+						class="button" style="text-align: center; margin:0 auto; display:block" onclick="alphanumeric(customer_number_input)">|msg_general_20_buy|</p>
+					</div>
+				</div>
+				<br>
+			</div>
+			|footer|
+			<script>
+			function noAlert() {
+				document.getElementById("customer_number_input").value = "";
+				document.getElementById("customer_number_input").placeholder = "min 1 max 30";
+				document.getElementById("customer_number_input").className = "|input_class|";
+			}
+			function delay_send() {
+				//	document.getElementById("customer_number").value = document.getElementById("customer_number_input").value;
+				document.getElementById("how_many_daypasses_to_buy").action = "https://getflink.com/payment/rePayment.php";
+				document.getElementById("how_many_daypasses_to_buy").submit();
+
+			}
+
+			function open_payment() {
+				var xhttp = new XMLHttpRequest();
+				xhttp.open("POST", "cmd", true);
+				xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xhttp.send("_cmd_open_payment=yes");
+			}
+			function alphanumeric(inputtxt)
+			{
+				var letters = /^[0-9]+$/;
+				if(inputtxt.value.match(letters))
+				{
+					numberdaypass = inputtxt.value;
+					if (numberdaypass < 31 && numberdaypass >0) {
+
+						open_payment();
+						document.getElementById("payment_message").value = "Provider - |provider|/Hotspot  - |hotspot_serial|/Wanted:"+document.getElementById("customer_number_input").value+"/Bought:"+document.getElementById("customer_number").value;
+						document.getElementById("send_button").className = "buttonpressed";
+						document.getElementById("send_button").innerHTML = "|msg_general_21_sending|";
+						setTimeout(delay_send, 5500);
+
+					}
+					else
+					{
+						document.getElementById("customer_number_input").value = "";
+						document.getElementById("customer_number_input").placeholder = "msg_general_14_only_numbers_1_30";
+						document.getElementById("customer_number_input").className = "alert";
+					}
+				}
+				else
+				{
+					document.getElementById("customer_number_input").value = "";
+					document.getElementById("customer_number_input").placeholder = "msg_general_14_only_numbers_1_30";
+					document.getElementById("customer_number_input").className = "alert";
+
+					return false;
+				}
+			}
+			</script>
+			|get_price|
+			|move_slides|
+		</body>
+		</html>
